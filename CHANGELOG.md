@@ -4,6 +4,15 @@ Entri terbaru di atas. Tiap entri memuat tanggal, apa yang berubah, dan kenapa.
 
 ## 2026-10-29
 
+Kutipan kaki dan judul layanan dibaca langsung dari elemennya, karena klik tur tidak mengenai kutipan itu.
+
+- Kaki halaman tidak menerima klik. Kelas `font-3` yang belakangan mengembalikan huruf ke Inter, jadi kalimat kutipan kaki tampil dengan Inter, bukan EB Garamond.
+- Tiga judul layanan tampil dengan Apfel Grotezk.
+- Ikon kanan, baris jabatan, dan tombol menu sudah ada di hasil ukur yang tersimpan. Kutipan kaki diselesaikan dengan bacaan langsung ini.
+- Angka bacaannya tidak di-commit. Halaman publik tidak diubah.
+
+## 2026-10-29
+
 Tur ukur menahan aksi halaman referensi sejak jari menyentuh, supaya ikon setting tidak membuka panel dan menggeser kotak yang dicatat.
 
 - `_isak_preview/ukur-titik.js` menahan aksi sejak jari menyentuh. Tautan, panel, dan formulir pada halaman referensi tidak ikut berjalan. Kotak yang dicatat tetap kotak yang pertama ditekan.
