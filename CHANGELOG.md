@@ -4,6 +4,16 @@ Entri terbaru di atas. Tiap entri memuat tanggal, apa yang berubah, dan kenapa.
 
 ## 2026-10-29
 
+Pratinjau lokal mulai memakai data Hasan pada bagian yang sudah disepakati, supaya perbandingan UI tidak lagi memakai nama dan angka demo di bagian itu.
+
+- Nama di pembuka menjadi Hasan Basri. Angka pengalaman 8+ sejak 2018, dan angka proyek selesai 10+. Angka 10+ dari Hasan, termasuk desain grafis. Empat karya bernama tidak ditambah.
+- Ikon kartu tinggal Facebook dan Instagram. Tombol unduh CV, pita klien, pita penghargaan, dan bagian testimoni dihapus.
+- Riwayat demo diganti satu baris pendidikan: Ekonomi Pembangunan, Universitas Jambi, 2023.
+- Tulisan kaki menjadi Al Basri Dev, dengan monogram HB. Kartu memakai ilustrasi, bukan foto.
+- Halaman publik tidak diubah.
+
+## 2026-10-29
+
 Jam, logo kepala, garis riwayat, dan label bagian pada pratinjau lokal mengikuti kelas yang sama di referensi, supaya bagian yang masih beda bisa dicek berdampingan.
 
 - Jam menjadi dua baris teks kecil. Di layar sempit, logo tampil di kepala halaman.

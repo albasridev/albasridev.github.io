@@ -45,7 +45,8 @@ Skill Cursor tidak dibuat. Prosedur revisi cukup pendek untuk tinggal di aturan.
 - Lokasi publik: Bali.
 - Pendidikan, satu kalimat di bagian Tentang: lulus Ekonomi Pembangunan dari Universitas Jambi pada 2023.
 - Audiens: campuran klien dan perekrut.
-- Nama Tim2San, tautan tim2san.com, dan nama Al Basri Dev tidak dipakai di situs portofolio.
+- Nama Tim2San dan tautan tim2san.com tidak dipakai di situs portofolio.
+- Nama di pembuka tetap Hasan Basri. Tulisan kaki pada pratinjau lokal adalah Al Basri Dev. Halaman yang sudah terbit belum memakai tulisan kaki itu.
 
 ## Tujuan pengunjung
 
@@ -80,7 +81,7 @@ Satu halaman yang digulir, urutannya tetap:
 
 Tautan bagian hanya tiga: Karya, Tentang, Kontak. Sakelar bahasa ada di menu atas, di samping ketiga tautan itu. Di layar sempit menu tetap bisa dipilih dengan ketukan, tanpa gulir mendatar.
 
-Tidak ada halaman detail karya. Tidak ada bagian riwayat kerja terpisah.
+Tidak ada halaman detail karya. Tidak ada bagian riwayat kerja terpisah pada halaman yang sudah terbit. Baris pendidikan pada pratinjau lokal dijelaskan di bagian Pemeriksaan tampilan.
 
 ## Teks terkunci
 
@@ -107,7 +108,7 @@ Inggris: I build websites and panels from scratch, then keep them running. Based
 | Utama | Lihat karya | View work | `#karya` |
 | Kedua | Hubungi saya | Contact me | `#kontak` |
 
-Tidak ada foto. Monogram HB hanya untuk favicon.
+Tidak ada foto pada halaman yang sudah terbit. Monogram HB hanya untuk favicon. Ilustrasi pada pratinjau lokal dijelaskan di bagian Pemeriksaan tampilan.
 
 Judul tab sama di kedua bahasa: `Hasan Basri | Web Developer & Graphic Designer`.
 
@@ -209,7 +210,7 @@ Indonesia: Situs perusahaan restorasi ekosistem di Jambi. Dibangun dari nol deng
 
 Inggris: Company site for an ecosystem restoration concession in Jambi. Built from scratch with WordPress and still maintained.
 
-Nama publik tetap Hasan Basri. Tulisan Al Basri Dev di footer situs klien tidak dibawa ke situs portofolio.
+Nama publik tetap Hasan Basri. Tulisan Al Basri Dev di footer situs klien tidak dibawa ke halaman yang sudah terbit. Pratinjau lokal memakai tulisan kaki Al Basri Dev.
 
 ## Tampilan
 
@@ -235,7 +236,7 @@ Acuan yang tidak ditiru: `https://mardiansyah-gunting.github.io/personal/`. Jang
 
 ## Pemeriksaan tampilan
 
-Beranda `https://isak.botble.com/` dibandingkan di komputer lewat folder `_isak_preview/`. Folder itu diabaikan Git. Isinya mengikuti data contoh demo, supaya jarak, huruf, tombol, dan kartu bisa dicek berdampingan.
+Beranda `https://isak.botble.com/` dibandingkan di komputer lewat folder `_isak_preview/`. Folder itu diabaikan Git. Pratinjau lokal sudah memakai sebagian data Hasan. Halaman yang sudah terbit belum diganti.
 
 Skrip otomatisnya `_isak_preview/ukur-beranda.js`. Tempel berkas itu di konsol pada beranda referensi. Skrip membaca ukuran huruf, warna, jarak, radius, dan bayangan, lalu menyimpan dua berkas di `_isak_preview/exports/`. Salinan yang sama ada di `window.__ISAK_HOME_MEASURE__`. Halaman tidak diklik, tidak digulir, dan isi serta gayanya tidak diubah. Teks pengunjung tidak disimpan, hanya panjang teks. Jika skrip masih berjalan, tempelan berikutnya ditolak.
 
@@ -249,13 +250,26 @@ Pratinjau lokal tidak menampilkan bilah cookie dan tidak menampilkan jendela new
 
 Jarak pratinjau lokal mengikuti kotak yang sudah terukur: kartu profil mengikuti tinggi jendela, kolom isi, judul, kartu karya, layanan, keahlian, formulir, tombol kirim, dan kutipan kaki. Kutipan kaki memakai Geist. Angka ukur tidak ditulis di berkas ini. Halaman publik tidak diubah.
 
-Kartu profil dan kolom alat pada pratinjau lokal mengikuti susunan HTML referensi. Sapaan memakai ukuran judul kecil dan katanya berganti utuh. Ikon sosial, panah, dan unduhan memakai gambar garis. Kolom alat memuat sakelar mode, empat tautan dengan dua garis pemisah, tooltip, dan tombol kembali ke atas. Di layar sempit, daftar tautan itu disembunyikan. Sakelar mode tidak membalik halaman ke mode terang.
+Kartu profil dan kolom alat pada pratinjau lokal mengikuti susunan HTML referensi. Ikon lampu, pengaturan warna, dan tombol kembali ke atas memakai lingkaran. Kartu kiri punya garis tepi. Tulisan ketersediaan dibaca dari bawah ke atas. Kolom alat memuat sakelar mode, empat tautan dengan dua garis pemisah, tooltip, dan tombol kembali ke atas. Di layar sempit, daftar tautan itu disembunyikan. Sakelar mode tidak membalik halaman ke mode terang.
 
-Jam pada pratinjau lokal terdiri dari dua baris berukuran teks kecil. Di layar sempit, logo tampil di kepala halaman dan logo pada kartu disembunyikan. Riwayat kerja punya garis yang terisi mengikuti guliran. Label bagian memakai ukuran keterangan kecil dan ikon. Halaman publik tidak diubah.
+Jam pada pratinjau lokal terdiri dari dua baris berukuran teks kecil. Di layar sempit, logo tampil di kepala halaman dan logo pada kartu disembunyikan. Label bagian memakai ukuran keterangan kecil dan ikon.
+
+Yang sudah dipasang di pratinjau lokal:
+
+- Nama di pembuka: Hasan Basri. Peran: Web Developer & Graphic Designer.
+- Kalimat pembuka: Saya membangun website dan panel dari nol, lalu merawatnya. Berbasis di Bali.
+- Angka 8+ untuk pengalaman sejak 2018, dan 10+ untuk proyek selesai. Angka 10+ berasal dari Hasan dan mencakup desain grafis. Empat karya yang disebut namanya tetap yang di tabel Empat karya. Nama proyek desain grafis tidak ditambahkan.
+- Ikon kartu: Facebook `https://www.facebook.com/profile.php?id=61591124157352` dan Instagram `https://www.instagram.com/albasri.dev/`. Tidak ada tombol unduh CV.
+- Satu baris pendidikan: Ekonomi Pembangunan, Universitas Jambi, 2023. Garis di samping baris itu mengikuti guliran dan menembus titik.
+- Ilustrasi karakter pada kartu. Itu bukan foto Hasan.
+- Tulisan kaki: AL BASRI terisi, DEV garis, monogram HB di tengah, dan baris hak cipta © 2026 Al Basri Dev.
+- Pita klien, pita penghargaan, dan bagian testimoni tidak ditampilkan.
+
+Yang masih contoh demo, menunggu giliran berikutnya: daftar penghargaan, kartu karya, layanan, batang keahlian, formulir, dan kutipan Steve Jobs. Halaman publik tidak diubah.
 
 Contoh cara kerja kedua skrip tetap `script-bump.js`. Berkas contoh itu tidak diubah. Skrip, huruf pratinjau, dan hasil ukur diabaikan Git, termasuk berkas `isak-beranda-*` dan `isak-titik-*` yang tersimpan di akar folder.
 
-Halaman publik tetap memakai fakta di berkas ini. Data contoh demo dan hasil ukur tidak di-commit dan tidak diunggah. Penggantian ke data Hasan dilakukan setelah tampilan lokal itu disetujui.
+Halaman publik tetap memakai susunan yang sudah terbit. Data contoh yang masih tersisa, ilustrasi kartu, dan hasil ukur tidak di-commit dan tidak diunggah. Penggantian halaman publik menunggu persetujuan tampilan lokal.
 
 ## Teknologi situs
 
@@ -279,9 +293,9 @@ Halaman publik tetap memakai fakta di berkas ini. Data contoh demo dan hasil uku
 
 - Tombol unduh CV. Kedua PDF ini bahan internal: `CV ATS Hasan Basri.pdf` dan `Curriculum Vitae Hasan Basri Baru.pdf`.
 - Formulir kontak.
-- Tautan Facebook, Twitter, dan profil GitHub. Unggah ke GitHub Pages tetap dilakukan. Nomor ditampilkan sebagai WhatsApp, tanpa tautan telepon terpisah.
-- Foto diri. Favicon monogram HB tetap ada.
-- Bagian riwayat terpisah, bagian pendidikan terpisah, penghargaan, dan batang keahlian. Kalimat kelulusan di bagian Tentang tetap ada.
+- Tautan Twitter dan profil GitHub. Unggah ke GitHub Pages tetap dilakukan. Nomor ditampilkan sebagai WhatsApp, tanpa tautan telepon terpisah. Ikon Facebook hanya ada pada pratinjau lokal. Halaman yang sudah terbit belum menampilkan Facebook.
+- Foto diri pada halaman yang sudah terbit. Favicon monogram HB tetap ada. Pratinjau lokal memakai ilustrasi karakter, bukan foto Hasan.
+- Bagian riwayat terpisah, penghargaan, dan batang keahlian pada halaman yang sudah terbit. Kalimat kelulusan di bagian Tentang tetap ada. Pratinjau lokal punya satu baris pendidikan, seperti di bagian Pemeriksaan tampilan.
 - SMK, magang, admin, esports, turnamen, dukungan POS, Sangkek, SoU Group, WWF, Ai-CHA, DLT Universitas Jambi, Sorot Jambi, situs dosen Muhammad Ridwansyah, dan Mitra Kevin Abadi.
 - Umur, tanggal lahir, agama, jenis kelamin, dan alamat jalan. Nilai itu tidak disalin ke dokumen ini.
 - Email `hasan.n.dev@mail.com`. Email yang dipakai hanya `hasan.n.dev@gmail.com`.
@@ -292,7 +306,7 @@ Abaikan lokasi, jabatan, dan daftar pekerjaan di dalam kedua PDF. Pakai identita
 
 ## Contoh keputusan
 
-Salah: menambah kartu Sangkek karena namanya ada di CV. Benar: tolak. Karya publik hanya empat baris di tabel bagian Empat karya.
+Salah: menambah kartu Sangkek karena namanya ada di CV. Benar: tolak. Karya publik yang disebut namanya hanya empat baris di tabel bagian Empat karya. Angka 10+ pada pratinjau tidak menambah kartu.
 
 Salah: menerjemahkan LexaFX di halaman Inggris. Benar: nama tetap. Yang berganti hanya kalimat deskripsi.
 

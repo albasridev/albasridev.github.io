@@ -38,3 +38,4 @@ Daftar periksa pembangunan. Fakta isi situs ada di `docs/spesifikasi.md`. Berkas
 - [x] Pratinjau lokal mengikuti jarak yang terukur. Halaman publik belum diganti
 - [x] Kartu profil dan kolom alat pratinjau lokal mengikuti susunan HTML referensi. Halaman publik belum diganti
 - [x] Jam, logo kepala, garis riwayat, dan label bagian pada pratinjau lokal mengikuti referensi. Halaman publik belum diganti
+- [x] Pratinjau lokal memakai nama Hasan, angka 8+ dan 10+, ikon Facebook dan Instagram, satu baris pendidikan, dan tulisan kaki Al Basri Dev. Halaman publik belum diganti
