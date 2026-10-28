@@ -36,23 +36,23 @@ export const copy: Record<Locale, Copy> = {
   id: {
     description: "Portofolio Hasan Basri, web developer dan graphic designer di Bali.",
     nav: { karya: "Karya", tentang: "Tentang", kontak: "Kontak" },
-    hero: "Saya membangun website dan panel dari nol, lalu merawatnya. Berbasis di Bali.",
+    hero: "Membangun Sistem & Panel Kustom dari Nol dengan Pemeliharaan Jangka Panjang.",
     viewWork: "Lihat karya",
     contactMe: "Hubungi saya",
     servicesTitle: "Yang saya kerjakan",
     services: [
       {
-        title: "Website dan panel",
-        text: "Dibangun dari nol, lalu dirawat. Alat dipilih sesuai kebutuhan.",
+        title: "Website & Panel",
+        text: "Dibangun dari nol hingga dirawat secara berkala. Selalu menggunakan perangkat (tools) yang paling tepat guna.",
       },
       {
         title: "Desain",
-        text: "Visual untuk web dan merek, dari latar belakang desain.",
+        text: "Menghadirkan visual untuk web dan merek, berbekal fondasi desain yang kuat.",
       },
     ],
     aboutTitle: "Tentang",
     about:
-      "Saya Hasan Basri, web developer dan graphic designer berbasis di Bali. Saya lulus Ekonomi Pembangunan dari Universitas Jambi pada 2023. Latar belakang desain saya bawa ke setiap website yang saya buat, jadi tampilan dan fungsi berjalan bersama. Saya bekerja sebagai vibe coder: alat mengikuti pekerjaan, dari WordPress, React, Node.js, sampai PHP.",
+      "Saya menggabungkan desain web, identitas merek, dan pengembangan no-code untuk membantu bisnis bergerak lebih cepat tanpa kehilangan karakter aslinya. Setiap proyek dikerjakan dengan memadukan strategi dan gaya. Memastikan desain tidak hanya tampak menarik, tetapi juga fungsional dan berdampak nyata.",
     contactTitle: "Kontak",
     contactIntro: "Hubungi saya lewat WhatsApp, email, atau Instagram.",
     visit: "Kunjungi situs",
@@ -110,23 +110,23 @@ export const copy: Record<Locale, Copy> = {
   en: {
     description: "Portfolio of Hasan Basri, a web developer and graphic designer in Bali.",
     nav: { karya: "Work", tentang: "About", kontak: "Contact" },
-    hero: "I build websites and panels from scratch, then keep them running. Based in Bali.",
+    hero: "Building custom systems and panels from scratch, with long-term maintenance.",
     viewWork: "View work",
     contactMe: "Contact me",
     servicesTitle: "What I do",
     services: [
       {
-        title: "Websites and panels",
-        text: "Built from scratch, then maintained. The tools follow the work.",
+        title: "Website & Panel",
+        text: "Built from scratch and maintained on a regular basis. The tools used are always the ones best suited to the job.",
       },
       {
         title: "Design",
-        text: "Visual work for the web and the brand, from a design background.",
+        text: "Visuals for the web and the brand, grounded in a strong design foundation.",
       },
     ],
     aboutTitle: "About",
     about:
-      "I'm Hasan Basri, a web developer and graphic designer based in Bali. In 2023 I graduated from Universitas Jambi with a degree in Ekonomi Pembangunan. I bring a design background to every website I build, so appearance and function stay together. I work as a vibe coder: the tools follow the job, from WordPress and React to Node.js and PHP.",
+      "I combine web design, brand identity, and no-code development to help businesses move faster without losing their original character. Every project blends strategy and style, so the design is not only attractive, but also functional and has a real impact.",
     contactTitle: "Contact",
     contactIntro: "Contact me on WhatsApp, email, or Instagram.",
     visit: "Visit site",

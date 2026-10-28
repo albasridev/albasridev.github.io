@@ -4,6 +4,14 @@ Entri terbaru di atas. Tiap entri memuat tanggal, apa yang berubah, dan kenapa.
 
 ## 2026-10-29
 
+Pembuka, Tentang, dan dua jalur layanan memakai kalimat yang Hasan kunci, supaya teks pengunjung sama dengan keputusan terakhir.
+
+- Pembuka menjadi Membangun Sistem & Panel Kustom dari Nol dengan Pemeliharaan Jangka Panjang. "Berbasis di Bali" lepas dari pembuka. Deskripsi singkat tetap menyebut Bali.
+- Paragraf Tentang dan dua jalur layanan diganti di halaman Indonesia dan Inggris. Judul bagian publik tetap Tentang / About. Kata vibe coder, Node.js, dan PHP tidak lagi tertulis untuk pengunjung.
+- Pratinjau lokal memakai tulisan Terbuka untuk Kolaborasi dan judul Tentang yang baru. Timeline pendidikan tetap, termasuk kelulusan 2023. Berkas pratinjau tidak di-commit.
+
+## 2026-10-29
+
 Gambar karya dan pratinjau lokal disamakan dengan keputusan Hasan, supaya kartu dan teks yang terlihat tidak lagi menunggu berkas atau memakai contoh demo.
 
 - Empat tangkapan layar disimpan di `public/works/`. Kartu Echlo Beauty memakai gambar halaman masuk, tanpa tautan. Kaki gambar memuat Naga Perkasa Group, dan nama itu tidak diulang sebagai kalimat di halaman.

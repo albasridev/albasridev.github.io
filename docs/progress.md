@@ -25,6 +25,7 @@ Daftar periksa pembangunan. Fakta isi situs ada di `docs/spesifikasi.md`. Berkas
 - [x] Tangkapan layar Rota International, LexaFX, Alam Bukit Tigapuluh, dan Echlo Beauty disimpan di repositori
 - [x] Kartu Echlo Beauty tampil dengan gambar halaman masuk, tanpa tautan, dan tanpa data klien
 - [x] Pratinjau lokal memakai ilustrasi senyum dengan rambut digelung, empat baris pendidikan, dan teks Indonesia di seluruh halaman. Tidak di-commit dan tidak diunggah
+- [x] Pembuka, Tentang, dan dua jalur layanan memakai teks yang dikunci Hasan, dalam bahasa Indonesia dan Inggris. Kelulusan tetap di timeline pratinjau, tidak di halaman publik
 - [x] Perintah menjalankan di README disamakan dengan `package.json`
 - [x] Tata letak berkas kode ditulis di spesifikasi, bagian Teknologi situs
 - [x] Alur unggah ke `https://albasridev.github.io` tertulis di README

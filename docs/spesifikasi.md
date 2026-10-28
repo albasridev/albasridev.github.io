@@ -99,9 +99,11 @@ Nama yang terlihat di pembuka: Hasan Basri.
 
 Peran: Web Developer & Graphic Designer.
 
-Indonesia: Saya membangun website dan panel dari nol, lalu merawatnya. Berbasis di Bali.
+Indonesia: Membangun Sistem & Panel Kustom dari Nol dengan Pemeliharaan Jangka Panjang.
 
-Inggris: I build websites and panels from scratch, then keep them running. Based in Bali.
+Inggris: Building custom systems and panels from scratch, with long-term maintenance.
+
+Pembuka tidak menulis "Berbasis di Bali". Deskripsi singkat tetap menyebut Bali.
 
 | Tombol | Indonesia | Inggris | Tujuan |
 | --- | --- | --- | --- |
@@ -123,22 +125,22 @@ Judul bagian: Yang saya kerjakan / What I do.
 
 Dua jalur, tanpa daftar logo:
 
-1. Website dan panel / Websites and panels. Indonesia: Dibangun dari nol, lalu dirawat. Alat dipilih sesuai kebutuhan. Inggris: Built from scratch, then maintained. The tools follow the work.
-2. Desain / Design. Indonesia: Visual untuk web dan merek, dari latar belakang desain. Inggris: Visual work for the web and the brand, from a design background.
+1. Website & Panel. Indonesia: Dibangun dari nol hingga dirawat secara berkala. Selalu menggunakan perangkat (tools) yang paling tepat guna. Inggris: Built from scratch and maintained on a regular basis. The tools used are always the ones best suited to the job.
+2. Desain / Design. Indonesia: Menghadirkan visual untuk web dan merek, berbekal fondasi desain yang kuat. Inggris: Visuals for the web and the brand, grounded in a strong design foundation.
 
-Kalimat Tentang boleh menyebut rentang alat. Kartu karya hanya menyebut alat yang dikonfirmasi untuk karya itu. Node.js dan PHP belum ditempel ke satu kartu.
+Judul jalur pertama sama di kedua bahasa: Website & Panel. Kartu karya hanya menyebut alat yang dikonfirmasi untuk karya itu. Node.js dan PHP tidak tertulis di teks pengunjung dan tidak menjadi label kartu.
 
 ### Tentang
 
 Indonesia:
 
-Saya Hasan Basri, web developer dan graphic designer berbasis di Bali. Saya lulus Ekonomi Pembangunan dari Universitas Jambi pada 2023. Latar belakang desain saya bawa ke setiap website yang saya buat, jadi tampilan dan fungsi berjalan bersama. Saya bekerja sebagai vibe coder: alat mengikuti pekerjaan, dari WordPress, React, Node.js, sampai PHP.
+Saya menggabungkan desain web, identitas merek, dan pengembangan no-code untuk membantu bisnis bergerak lebih cepat tanpa kehilangan karakter aslinya. Setiap proyek dikerjakan dengan memadukan strategi dan gaya. Memastikan desain tidak hanya tampak menarik, tetapi juga fungsional dan berdampak nyata.
 
 Inggris:
 
-I'm Hasan Basri, a web developer and graphic designer based in Bali. In 2023 I graduated from Universitas Jambi with a degree in Ekonomi Pembangunan. I bring a design background to every website I build, so appearance and function stay together. I work as a vibe coder: the tools follow the job, from WordPress and React to Node.js and PHP.
+I combine web design, brand identity, and no-code development to help businesses move faster without losing their original character. Every project blends strategy and style, so the design is not only attractive, but also functional and has a real impact.
 
-Kata vibe coder hanya ada di kalimat ini, tidak di pembuka.
+Judul bagian di halaman publik tetap Tentang / About. Di pratinjau lokal, judul di dalam bagian itu adalah: Indonesia `Merancang merek dan website dengan kejelasan, kreativitas, dan kecepatan no-code.` Inggris `Designing brands and websites with clarity, creativity, and no-code speed.` Kelulusan tidak ditulis di paragraf ini. Kelulusan tetap di timeline pendidikan pratinjau lokal. Kata vibe coder tidak dipakai di teks pengunjung.
 
 ### Kontak
 
@@ -257,12 +259,12 @@ Jam pada pratinjau lokal terdiri dari dua baris berukuran teks kecil. Di layar s
 Yang sudah dipasang di pratinjau lokal:
 
 - Nama di pembuka: Hasan Basri. Peran: Web Developer & Graphic Designer.
-- Kalimat pembuka: Saya membangun website dan panel dari nol, lalu merawatnya. Berbasis di Bali.
+- Kalimat pembuka: Membangun Sistem & Panel Kustom dari Nol dengan Pemeliharaan Jangka Panjang. Tulisan ketersediaan: Terbuka untuk Kolaborasi.
 - Angka 8+ untuk pengalaman sejak 2018, dan 10+ untuk proyek selesai. Angka 10+ berasal dari Hasan dan mencakup desain grafis. Empat karya yang disebut namanya tetap yang di tabel Empat karya. Nama proyek desain grafis tidak ditambahkan.
 - Ikon kartu: Facebook `https://www.facebook.com/profile.php?id=61591124157352` dan Instagram `https://www.instagram.com/albasri.dev/`. Tidak ada tombol unduh CV.
 - Empat baris pendidikan, dari yang terbaru. Garis di samping baris itu mengikuti guliran dan menembus titik. 2016–2023, Ekonomi Pembangunan, Universitas Jambi. 2014–2016, SMK Revany Indra Putra, Kota Jambi. 2010–2014, SMPN 1 Muaro Jambi. 2004–2010, SDN 73 Muaro Jambi. Nama sekolah tidak diterjemahkan. "Jambi Luar Kota" tidak ditulis. Kelulusan universitas berakhir 2023, bukan Now.
 - Ilustrasi karakter pada kartu: potret dada gaya 3D, kemeja gelap, latar gelap, senyum, rambut digelung. Tangan tidak digambar. Itu bukan foto Hasan.
-- Bagian Tentang pada pratinjau lokal memakai kalimat Tentang yang terkunci. Judulnya: Tampilan dan fungsi berjalan bersama. Di bawah paragraf ada dua jalur, tanpa tahun: Website dan panel, dan Desain. Daftar penghargaan tidak ditampilkan.
+- Bagian Tentang pada pratinjau lokal memakai kalimat Tentang yang terkunci. Judulnya: Merancang merek dan website dengan kejelasan, kreativitas, dan kecepatan no-code. Di bawah paragraf ada dua jalur, tanpa tahun: Website & Panel, dan Desain. Daftar penghargaan tidak ditampilkan.
 - Pratinjau lokal berbahasa Indonesia di seluruh teks pengunjung. Halaman Inggris yang sudah terbit tetap di `/en/`.
 - Tulisan kaki: AL BASRI terisi, DEV garis, monogram HB di tengah, dan baris hak cipta © 2026 Al Basri Dev.
 - Pita klien, pita penghargaan, dan bagian testimoni tidak ditampilkan.
@@ -302,7 +304,7 @@ Susunan halaman publik tetap seperti yang sudah terbit. Perubahan halaman publik
 - Umur, tanggal lahir, agama, jenis kelamin, dan alamat jalan. Nilai itu tidak disalin ke dokumen ini.
 - Email `hasan.n.dev@mail.com`. Email yang dipakai hanya `hasan.n.dev@gmail.com`.
 - Elementor dan nama tema WordPress, di halaman maupun di kartu.
-- Node.js dan PHP sebagai label kartu. Keduanya hanya boleh muncul di kalimat Tentang.
+- Node.js dan PHP di teks pengunjung, termasuk sebagai label kartu.
 
 Abaikan lokasi, jabatan, dan daftar pekerjaan di dalam kedua PDF. Pakai identitas, teks, dan empat karya di spesifikasi ini. `CV ATS Hasan Basri.pdf` lebih baru daripada `Curriculum Vitae Hasan Basri Baru.pdf`, dan keduanya tetap kalah dari spesifikasi ini.
 
