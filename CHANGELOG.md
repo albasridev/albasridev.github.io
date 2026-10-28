@@ -4,6 +4,14 @@ Entri terbaru di atas. Tiap entri memuat tanggal, apa yang berubah, dan kenapa.
 
 ## 2026-10-29
 
+Kartu profil dan kolom alat pada pratinjau lokal mengikuti susunan HTML referensi, supaya bagian yang masih beda bisa dicek berdampingan.
+
+- Sapaan memakai ukuran judul kecil dan katanya berganti utuh. Ikon sosial, panah, dan unduhan memakai gambar garis.
+- Kolom alat memuat sakelar mode, empat tautan dengan pemisah, tooltip, dan tombol kembali ke atas. Di layar sempit, daftar tautan itu disembunyikan.
+- Sakelar mode tidak membalik halaman ke mode terang. Halaman publik tidak diubah.
+
+## 2026-10-29
+
 Pratinjau lokal disamakan dengan kotak yang terukur, supaya perbandingan UI bisa dicek sebelum data Hasan dipakai.
 
 - Jarak kartu profil, kolom isi, judul, karya, layanan, keahlian, formulir, tombol kirim, dan kutipan kaki pada pratinjau lokal mengikuti bacaan beranda referensi.

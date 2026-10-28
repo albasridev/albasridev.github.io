@@ -249,6 +249,8 @@ Pratinjau lokal tidak menampilkan bilah cookie dan tidak menampilkan jendela new
 
 Jarak pratinjau lokal mengikuti kotak yang sudah terukur: kartu profil mengikuti tinggi jendela, kolom isi, judul, kartu karya, layanan, keahlian, formulir, tombol kirim, dan kutipan kaki. Kutipan kaki memakai Geist. Angka ukur tidak ditulis di berkas ini. Halaman publik tidak diubah.
 
+Kartu profil dan kolom alat pada pratinjau lokal mengikuti susunan HTML referensi. Sapaan memakai ukuran judul kecil dan katanya berganti utuh. Ikon sosial, panah, dan unduhan memakai gambar garis. Kolom alat memuat sakelar mode, empat tautan dengan dua garis pemisah, tooltip, dan tombol kembali ke atas. Di layar sempit, daftar tautan itu disembunyikan. Sakelar mode tidak membalik halaman ke mode terang.
+
 Contoh cara kerja kedua skrip tetap `script-bump.js`. Berkas contoh itu tidak diubah. Skrip, huruf pratinjau, dan hasil ukur diabaikan Git, termasuk berkas `isak-beranda-*` dan `isak-titik-*` yang tersimpan di akar folder.
 
 Halaman publik tetap memakai fakta di berkas ini. Data contoh demo dan hasil ukur tidak di-commit dan tidak diunggah. Penggantian ke data Hasan dilakukan setelah tampilan lokal itu disetujui.
