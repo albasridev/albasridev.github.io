@@ -35,3 +35,4 @@ Daftar periksa pembangunan. Fakta isi situs ada di `docs/spesifikasi.md`. Berkas
 - [x] Tur ukur menahan aksi halaman referensi sejak jari menyentuh, jadi panel setting tidak terbuka saat kotak diklik
 - [x] Kutipan kaki dan judul layanan dibaca langsung dari elemennya. Angka bacaannya tidak di-commit
 - [x] Pratinjau lokal memakai Funnel Display dan Geist, tanpa bilah cookie dan tanpa jendela newsletter
+- [x] Pratinjau lokal mengikuti jarak yang terukur. Halaman publik belum diganti

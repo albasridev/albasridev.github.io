@@ -4,6 +4,14 @@ Entri terbaru di atas. Tiap entri memuat tanggal, apa yang berubah, dan kenapa.
 
 ## 2026-10-29
 
+Pratinjau lokal disamakan dengan kotak yang terukur, supaya perbandingan UI bisa dicek sebelum data Hasan dipakai.
+
+- Jarak kartu profil, kolom isi, judul, karya, layanan, keahlian, formulir, tombol kirim, dan kutipan kaki pada pratinjau lokal mengikuti bacaan beranda referensi.
+- Kutipan kaki memakai Geist, bukan huruf judul.
+- Angka ukur tidak di-commit. Halaman publik tidak diubah.
+
+## 2026-10-29
+
 Kutipan kaki dan judul layanan dibaca langsung dari elemennya, karena klik tur tidak mengenai kutipan itu.
 
 - Kaki halaman tidak menerima klik. Kelas `font-3` yang belakangan mengembalikan huruf ke Inter, jadi kalimat kutipan kaki tampil dengan Inter, bukan EB Garamond.

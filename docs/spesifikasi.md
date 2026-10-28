@@ -247,6 +247,8 @@ Huruf pratinjau lokal: Funnel Display untuk judul, Geist untuk teks. Keduanya be
 
 Pratinjau lokal tidak menampilkan bilah cookie dan tidak menampilkan jendela newsletter. Bilah cookie pada demo hanya pemberitahuan persetujuan cookie. Situs ini tidak memasang cookie analitik atau iklan.
 
+Jarak pratinjau lokal mengikuti kotak yang sudah terukur: kartu profil mengikuti tinggi jendela, kolom isi, judul, kartu karya, layanan, keahlian, formulir, tombol kirim, dan kutipan kaki. Kutipan kaki memakai Geist. Angka ukur tidak ditulis di berkas ini. Halaman publik tidak diubah.
+
 Contoh cara kerja kedua skrip tetap `script-bump.js`. Berkas contoh itu tidak diubah. Skrip, huruf pratinjau, dan hasil ukur diabaikan Git, termasuk berkas `isak-beranda-*` dan `isak-titik-*` yang tersimpan di akar folder.
 
 Halaman publik tetap memakai fakta di berkas ini. Data contoh demo dan hasil ukur tidak di-commit dan tidak diunggah. Penggantian ke data Hasan dilakukan setelah tampilan lokal itu disetujui.
