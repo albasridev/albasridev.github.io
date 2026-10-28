@@ -5,8 +5,11 @@ CV ATS Hasan Basri.pdf
 # Pratinjau lokal
 _cv_preview/
 
-# Perbandingan UI lokal. Data contoh demo, jangan ikut commit.
+# Perbandingan UI lokal. Data contoh demo dan skrip ukur, jangan ikut commit.
 _isak_preview/
+
+# Contoh cara kerja skrip ukur. Bukan isi situs.
+script-bump.js
 
 # Keluaran pembangunan
 node_modules/

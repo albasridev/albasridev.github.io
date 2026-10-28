@@ -4,6 +4,14 @@ Entri terbaru di atas. Tiap entri memuat tanggal, apa yang berubah, dan kenapa.
 
 ## 2026-10-29
 
+Skrip ukur beranda Isak ditambah, supaya jarak dan huruf referensi bisa dicatat tanpa mengubah situs publik.
+
+- Skripnya `_isak_preview/ukur-beranda.js`. Hasil ukur tetap di folder itu dan tidak di-commit.
+- `script-bump.js` tetap contoh cara kerja dan tidak diubah. Keduanya diabaikan Git.
+- Halaman publik tidak diubah.
+
+## 2026-10-29
+
 Beranda Isak dibandingkan di komputer dulu, supaya UI bisa dicek sebelum data Hasan dipakai.
 
 - Folder `_isak_preview/` menyimpan perbandingan lokal dan diabaikan Git.

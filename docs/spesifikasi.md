@@ -237,7 +237,9 @@ Acuan yang tidak ditiru: `https://mardiansyah-gunting.github.io/personal/`. Jang
 
 Beranda `https://isak.botble.com/` dibandingkan di komputer lewat folder `_isak_preview/`. Folder itu diabaikan Git. Isinya mengikuti data contoh demo, supaya jarak, huruf, tombol, dan kartu bisa dicek berdampingan.
 
-Halaman publik tetap memakai fakta di berkas ini. Data contoh demo tidak di-commit dan tidak diunggah. Penggantian ke data Hasan dilakukan setelah tampilan lokal itu disetujui.
+Skrip ukurnya `_isak_preview/ukur-beranda.js`. Tempel berkas itu di konsol pada beranda referensi. Skrip membaca ukuran huruf, warna, jarak, radius, dan bayangan, lalu menyimpan dua berkas di `_isak_preview/exports/`. Salinan yang sama ada di `window.__ISAK_HOME_MEASURE__`. Halaman tidak diklik, tidak digulir, dan isi serta gayanya tidak diubah. Teks pengunjung tidak disimpan, hanya panjang teks. Jika skrip masih berjalan, tempelan berikutnya ditolak. Contoh cara kerjanya tetap `script-bump.js`. Berkas contoh itu tidak diubah, dan keduanya diabaikan Git.
+
+Halaman publik tetap memakai fakta di berkas ini. Data contoh demo dan hasil ukur tidak di-commit dan tidak diunggah. Penggantian ke data Hasan dilakukan setelah tampilan lokal itu disetujui.
 
 ## Teknologi situs
 

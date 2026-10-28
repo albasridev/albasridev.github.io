@@ -30,3 +30,4 @@ Daftar periksa pembangunan. Fakta isi situs ada di `docs/spesifikasi.md`. Berkas
 - [x] Alur unggah ke `https://albasridev.github.io` tertulis di README
 - [x] Uji browser: desktop, layar sempit, kedua bahasa, dan setiap tautan
 - [x] Pratinjau lokal beranda Isak untuk membandingkan UI. Tidak di-commit dan tidak diunggah
+- [x] Skrip ukur beranda Isak jalan di konsol referensi. Hasilnya tidak di-commit dan tidak diunggah
