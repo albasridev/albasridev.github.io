@@ -24,7 +24,7 @@ Sebelum mengubah situs atau dokumentasi, baca `docs/spesifikasi.md`. Fakta isi s
 - Menyalin umur, tanggal lahir, agama, jenis kelamin, atau alamat jalan dari PDF ke situs maupun dokumen.
 - Mengarang alat, angka, janji hasil, atau peran klien.
 - Menyalin `_isak_preview/` ke halaman publik. Folder itu perbandingan lokal dan diabaikan Git.
-- Mengubah `script-bump.js`. Berkas itu contoh cara kerja. Skrip ukur beranda adalah `_isak_preview/ukur-beranda.js`.
+- Mengubah `script-bump.js`. Berkas itu contoh cara kerja. Skrip ukur otomatis adalah `_isak_preview/ukur-beranda.js`. Skrip tur cincin kuning adalah `_isak_preview/ukur-titik.js`.
 
 ## Contoh
 

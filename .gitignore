@@ -11,6 +11,12 @@ _isak_preview/
 # Contoh cara kerja skrip ukur. Bukan isi situs.
 script-bump.js
 
+# Hasil ukur yang tersimpan di akar folder.
+isak-beranda-*.json
+isak-beranda-*.css
+isak-titik-*.json
+isak-titik-*.css
+
 # Keluaran pembangunan
 node_modules/
 dist/

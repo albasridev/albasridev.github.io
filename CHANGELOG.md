@@ -4,6 +4,15 @@ Entri terbaru di atas. Tiap entri memuat tanggal, apa yang berubah, dan kenapa.
 
 ## 2026-10-29
 
+Skrip tur kotak dalam ditambah, supaya jarak kartu, tombol, dan kutipan bisa dicatat tanpa mengubah situs publik.
+
+- `_isak_preview/ukur-titik.js` menandai satu contoh tiap kotak dengan pita dan cincin kuning. Klik tidak membuka tautan dan tidak mengirim formulir. Cookie dan newsletter tidak diukur.
+- Pratinjau lokal memakai Funnel Display untuk judul dan Geist untuk teks. Bilah cookie dan jendela newsletter dihapus dari pratinjau itu.
+- Hasil ukur yang tersimpan di akar folder ikut diabaikan Git.
+- Halaman publik tidak diubah.
+
+## 2026-10-29
+
 Skrip ukur beranda Isak ditambah, supaya jarak dan huruf referensi bisa dicatat tanpa mengubah situs publik.
 
 - Skripnya `_isak_preview/ukur-beranda.js`. Hasil ukur tetap di folder itu dan tidak di-commit.
