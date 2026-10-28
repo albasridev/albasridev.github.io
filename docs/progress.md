@@ -37,3 +37,4 @@ Daftar periksa pembangunan. Fakta isi situs ada di `docs/spesifikasi.md`. Berkas
 - [x] Pratinjau lokal memakai Funnel Display dan Geist, tanpa bilah cookie dan tanpa jendela newsletter
 - [x] Pratinjau lokal mengikuti jarak yang terukur. Halaman publik belum diganti
 - [x] Kartu profil dan kolom alat pratinjau lokal mengikuti susunan HTML referensi. Halaman publik belum diganti
+- [x] Jam, logo kepala, garis riwayat, dan label bagian pada pratinjau lokal mengikuti referensi. Halaman publik belum diganti

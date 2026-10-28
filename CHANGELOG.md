@@ -4,6 +4,15 @@ Entri terbaru di atas. Tiap entri memuat tanggal, apa yang berubah, dan kenapa.
 
 ## 2026-10-29
 
+Jam, logo kepala, garis riwayat, dan label bagian pada pratinjau lokal mengikuti kelas yang sama di referensi, supaya bagian yang masih beda bisa dicek berdampingan.
+
+- Jam menjadi dua baris teks kecil. Di layar sempit, logo tampil di kepala halaman.
+- Riwayat kerja punya garis yang terisi mengikuti guliran.
+- Label bagian memakai ukuran keterangan kecil dan ikon.
+- Halaman publik tidak diubah.
+
+## 2026-10-29
+
 Kartu profil dan kolom alat pada pratinjau lokal mengikuti susunan HTML referensi, supaya bagian yang masih beda bisa dicek berdampingan.
 
 - Sapaan memakai ukuran judul kecil dan katanya berganti utuh. Ikon sosial, panah, dan unduhan memakai gambar garis.
