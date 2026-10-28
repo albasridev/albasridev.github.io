@@ -5,6 +5,9 @@ CV ATS Hasan Basri.pdf
 # Pratinjau lokal
 _cv_preview/
 
+# Perbandingan UI lokal. Data contoh demo, jangan ikut commit.
+_isak_preview/
+
 # Keluaran pembangunan
 node_modules/
 dist/

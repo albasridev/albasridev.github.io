@@ -28,6 +28,8 @@ npm run preview
 
 `npm run dev` membuka situs di komputer. `npm run build` menulis hasil statis ke `dist/`. `npm run preview` menayangkan isi `dist/`.
 
+Pemeriksaan tampilan beranda Isak ada di spesifikasi, bagian Pemeriksaan tampilan. Folder `_isak_preview/` diabaikan Git dan bukan situs publik.
+
 ## Publikasi
 
 Tujuan: `https://albasridev.github.io`.

@@ -2,6 +2,13 @@
 
 Entri terbaru di atas. Tiap entri memuat tanggal, apa yang berubah, dan kenapa.
 
+## 2026-10-29
+
+Beranda Isak dibandingkan di komputer dulu, supaya UI bisa dicek sebelum data Hasan dipakai.
+
+- Folder `_isak_preview/` menyimpan perbandingan lokal dan diabaikan Git.
+- Halaman publik tidak diubah. Data contoh demo tidak diunggah.
+
 ## 2026-10-28
 
 Situs statis dua bahasa dibuat supaya karya bisa dibuka di `https://albasridev.github.io`.

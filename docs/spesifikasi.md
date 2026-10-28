@@ -233,6 +233,12 @@ Kepala halaman, yang memuat nama dan menu, menempel saat halaman digulir. Saat t
 
 Acuan yang tidak ditiru: `https://mardiansyah-gunting.github.io/personal/`. Jangan membawa menu bernomor, grafik frekuensi keahlian, galeri foto per jabatan, atau deretan riwayat kerja yang panjang.
 
+## Pemeriksaan tampilan
+
+Beranda `https://isak.botble.com/` dibandingkan di komputer lewat folder `_isak_preview/`. Folder itu diabaikan Git. Isinya mengikuti data contoh demo, supaya jarak, huruf, tombol, dan kartu bisa dicek berdampingan.
+
+Halaman publik tetap memakai fakta di berkas ini. Data contoh demo tidak di-commit dan tidak diunggah. Penggantian ke data Hasan dilakukan setelah tampilan lokal itu disetujui.
+
 ## Teknologi situs
 
 - Astro 5, keluaran statis. Perintah yang sama dengan `package.json`: `npm install`, `npm run dev`, `npm run build`, `npm run preview`.

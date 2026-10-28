@@ -23,6 +23,7 @@ Sebelum mengubah situs atau dokumentasi, baca `docs/spesifikasi.md`. Fakta isi s
 - Menautkan PDF CV, atau menambah tombol unduh CV.
 - Menyalin umur, tanggal lahir, agama, jenis kelamin, atau alamat jalan dari PDF ke situs maupun dokumen.
 - Mengarang alat, angka, janji hasil, atau peran klien.
+- Menyalin `_isak_preview/` ke halaman publik. Folder itu perbandingan lokal dan diabaikan Git.
 
 ## Contoh
 
