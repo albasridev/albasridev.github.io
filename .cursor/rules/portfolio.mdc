@@ -1,0 +1,33 @@
+---
+description: Aturan portofolio Hasan Basri. Baca docs/spesifikasi.md sebelum mengubah situs atau dokumen.
+alwaysApply: true
+---
+
+# Portofolio Hasan Basri
+
+Sebelum mengubah situs atau dokumentasi, baca `docs/spesifikasi.md`. Fakta isi situs ditulis di sana. Fakta yang boleh diulang ada di tabel fakta berulang pada spesifikasi. Jika kode dan spesifikasi berbeda, samakan kode ke spesifikasi, lalu catat di `CHANGELOG.md`.
+
+## Saat mengubah
+
+1. Ubah fakta isi situs di `docs/spesifikasi.md` lebih dulu. Jika fakta itu ada di tabel fakta berulang, ubah setiap berkas pada baris yang sama.
+2. Ubah teks Indonesia dan Inggris bersamaan. Nama yang tidak diterjemahkan tetap apa adanya.
+3. Jika cara kerja agen berubah, ubah aturan ini dalam perubahan yang sama. Jangan memindahkan isi aturan ke `AGENTS.md`. Jika nama berkas yang ditunjuk berubah, perbarui tautan di `AGENTS.md` pada perubahan yang sama.
+4. Centang `docs/progress.md` hanya setelah pekerjaan itu selesai dan bisa dicek.
+5. Tambah satu entri di `CHANGELOG.md`: tanggal, apa yang berubah, dan kenapa.
+
+## Jangan
+
+- Menambah bagian, karya, tautan, atau alat yang tidak ada di spesifikasi.
+- Menulis fakta isi situs di `AGENTS.md`.
+- Menaruh alamat login Echlo Beauty di halaman situs. Alamat itu boleh tetap di spesifikasi sebagai pengenal.
+- Menautkan PDF CV, atau menambah tombol unduh CV.
+- Menyalin umur, tanggal lahir, agama, jenis kelamin, atau alamat jalan dari PDF ke situs maupun dokumen.
+- Mengarang alat, angka, janji hasil, atau peran klien.
+
+## Contoh
+
+Salah: kartu baru diambil dari PDF CV karena terlihat relevan.
+Benar: tolak. Karya publik hanya yang tertulis di spesifikasi.
+
+Salah: nama LexaFX diterjemahkan di halaman Inggris.
+Benar: nama tetap LexaFX. Hanya kalimat deskripsinya yang diterjemahkan.

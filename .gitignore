@@ -1,0 +1,16 @@
+# CV internal. Jangan ikut ke repositori publik.
+Curriculum Vitae Hasan Basri Baru.pdf
+CV ATS Hasan Basri.pdf
+
+# Pratinjau lokal
+_cv_preview/
+
+# Keluaran pembangunan
+node_modules/
+dist/
+.astro/
+
+# Sistem
+Thumbs.db
+Desktop.ini
+.DS_Store

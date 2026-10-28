@@ -1,0 +1,48 @@
+---
+import "../styles/global.css";
+import type { Locale } from "../data/copy";
+import { pageTitle } from "../data/copy";
+
+interface Props {
+  locale: Locale;
+  description: string;
+}
+
+const { locale, description } = Astro.props;
+const idUrl = new URL("/", Astro.site);
+const enUrl = new URL("/en/", Astro.site);
+const canonical = locale === "id" ? idUrl : enUrl;
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#121417" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="id" href={idUrl} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="x-default" href={idUrl} />
+    <script is:inline>
+      document.addEventListener("click", (event) => {
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        const node = event.target;
+        const element = node instanceof Element ? node : node instanceof Node ? node.parentElement : null;
+        if (!element) return;
+        const link = element.closest("[data-lang-switch]");
+        if (!(link instanceof HTMLAnchorElement)) return;
+        event.preventDefault();
+        const url = new URL(link.href, window.location.origin);
+        url.hash = window.location.hash;
+        window.location.assign(url.href);
+      });
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

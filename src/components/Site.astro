@@ -1,0 +1,147 @@
+---
+import Base from "../layouts/Base.astro";
+import { contacts, copy, role, siteName, type Locale } from "../data/copy";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const text = copy[locale];
+const otherHref = locale === "id" ? "/en/" : "/";
+const featured = text.works.filter((work) => work.featured);
+const secondary = text.works.filter((work) => !work.featured);
+---
+
+<Base locale={locale} description={text.description}>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="wordmark">{siteName}</p>
+      <nav class="nav" aria-label={locale === "id" ? "Bagian" : "Sections"}>
+        <a href="#karya">{text.nav.karya}</a>
+        <a href="#tentang">{text.nav.tentang}</a>
+        <a href="#kontak">{text.nav.kontak}</a>
+        <p class="langs">
+          {locale === "id" ? (
+            <span aria-current="page">ID</span>
+          ) : (
+            <a href="/" data-lang-switch>ID</a>
+          )}
+          {locale === "en" ? (
+            <span aria-current="page">EN</span>
+          ) : (
+            <a href={otherHref} data-lang-switch>EN</a>
+          )}
+        </p>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>{siteName}</h1>
+        <p class="role">{role}</p>
+        <p class="lede">{text.hero}</p>
+        <div class="actions">
+          <a class="button" href="#karya">{text.viewWork}</a>
+          <a class="button secondary" href="#kontak">{text.contactMe}</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="karya">
+      <div class="wrap">
+        <h2 class="section-heading">{text.nav.karya}</h2>
+        <div class="works">
+          {
+            featured.map((work) => (
+              <article class:list={["work-card", "featured", { "no-image": !work.image }]}>
+                {work.image && work.alt && work.width && work.height && (
+                  <img src={work.image} alt={work.alt} width={work.width} height={work.height} />
+                )}
+                <div class="copy">
+                  <h3>{work.name}</h3>
+                  {work.tool && <p class="tool">{work.tool}</p>}
+                  <p>{work.description}</p>
+                  {work.href && (
+                    <p>
+                      <a href={work.href} target="_blank" rel="noopener noreferrer">
+                        {text.visit}
+                      </a>
+                    </p>
+                  )}
+                </div>
+              </article>
+            ))
+          }
+          {
+            secondary.map((work) => (
+              <article class="work-card secondary">
+                {work.image && work.alt && work.width && work.height && (
+                  <img src={work.image} alt={work.alt} width={work.width} height={work.height} />
+                )}
+                <div class="copy">
+                  <h3>{work.name}</h3>
+                  {work.tool && <p class="tool">{work.tool}</p>}
+                  <p>{work.description}</p>
+                </div>
+                {work.href && (
+                  <a href={work.href} target="_blank" rel="noopener noreferrer">
+                    {text.visit}
+                  </a>
+                )}
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="layanan">
+      <div class="wrap">
+        <h2 class="section-heading">{text.servicesTitle}</h2>
+        <div class="services">
+          {
+            text.services.map((service) => (
+              <article class="service">
+                <h3>{service.title}</h3>
+                <p>{service.text}</p>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tentang">
+      <div class="wrap">
+        <h2 class="section-heading">{text.aboutTitle}</h2>
+        <p>{text.about}</p>
+      </div>
+    </section>
+
+    <section class="section" id="kontak">
+      <div class="wrap">
+        <h2 class="section-heading">{text.contactTitle}</h2>
+        <p class="contact-intro">{text.contactIntro}</p>
+        <ul class="contact-list">
+          {
+            contacts.map((contact) => (
+              <li>
+                <span>{contact.label}</span>
+                {contact.external ? (
+                  <a href={contact.href} target="_blank" rel="noopener noreferrer">
+                    {contact.text}
+                  </a>
+                ) : (
+                  <a href={contact.href}>{contact.text}</a>
+                )}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+  </main>
+</Base>
