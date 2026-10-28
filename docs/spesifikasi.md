@@ -65,7 +65,7 @@ Tombol utama pembuka, **Lihat karya**, menggulir ke `#karya`. Tombol kedua, **Hu
 - Jangkar sama di kedua bahasa: `karya`, `layanan`, `tentang`, `kontak`.
 - Halaman Indonesia memakai `lang="id"`. Halaman Inggris memakai `lang="en"`.
 - Yang diterjemahkan: menu, judul bagian, tombol, dan kalimat deskripsi.
-- Yang tidak diterjemahkan: Hasan Basri, Web Developer & Graphic Designer, Rota International, LexaFX, Helix, Echlo Beauty, Alam Bukit Tigapuluh, MetaTrader 5, Ekonomi Pembangunan, Universitas Jambi, Bali, Jambi, WordPress, React, Node.js, PHP, WhatsApp, Instagram, Email.
+- Yang tidak diterjemahkan: Hasan Basri, Web Developer & Graphic Designer, Rota International, LexaFX, Helix, Echlo Beauty, Alam Bukit Tigapuluh, MetaTrader 5, Ekonomi Pembangunan, Universitas Jambi, SDN 73 Muaro Jambi, SMPN 1 Muaro Jambi, SMK Revany Indra Putra, Bali, Jambi, Kota Jambi, WordPress, React, Node.js, PHP, WhatsApp, Instagram, Email.
 
 Teks kedua bahasa disimpan terpisah. Jangan mencampur terjemahan di tengah kalimat.
 
@@ -164,10 +164,10 @@ Urutan tampil:
 
 1. Rota International, kartu utama, dengan tangkapan layar situs klien.
 2. LexaFX, kartu utama, dengan tangkapan layar situs klien.
-3. Echlo Beauty, kartu utama, tanpa gambar sampai berkasnya ada, tanpa tautan.
+3. Echlo Beauty, kartu utama, dengan tangkapan layar halaman masuk, tanpa tautan.
 4. Alam Bukit Tigapuluh, kartu sekunder di bawah tiga kartu utama. Kartunya lebih kecil, dengan tangkapan layar dan tautan.
 
-Tangkapan layar Rota International, LexaFX, dan Alam Bukit Tigapuluh disimpan di repositori, tidak ditautkan langsung dari situs klien. Teks alternatifnya memakai nama karya: Indonesia `Tangkapan layar beranda …`, Inggris `Screenshot of the … homepage`.
+Tangkapan layar Rota International, LexaFX, Alam Bukit Tigapuluh, dan Echlo Beauty disimpan di repositori, tidak ditautkan langsung dari situs klien. Untuk tiga situs yang punya beranda, teks alternatifnya memakai nama karya: Indonesia `Tangkapan layar beranda …`, Inggris `Screenshot of the … homepage`. Echlo Beauty memakai tangkapan layar halaman masuk. Teks alternatifnya: Indonesia `Tangkapan layar halaman masuk Echlo Beauty`, Inggris `Screenshot of the Echlo Beauty sign-in page`.
 
 Label tombol untuk karya yang punya situs publik: Kunjungi situs / Visit site. Tautan terbuka di tab baru. Deskripsi tidak memuat janji hasil bisnis atau keuntungan trading.
 
@@ -202,7 +202,7 @@ Inggris: A recap panel. There is no public storefront. Built from scratch and st
 
 Alamat panel, hanya untuk mengenali karya, tidak untuk ditampilkan atau ditautkan: `https://echlobeauty.com/login`. Repositori GitHub Pages bersifat publik, jadi baris ini bisa terbaca di sumber. Halaman situs portofolio tetap tanpa tautan itu. Alamat yang keliru dan tidak boleh dipakai: `echlo-cosmetique.fr` dan `eclobeauty.com`.
 
-Gambar kartu menunggu tangkapan layar dari Hasan, dengan data klien tertutup. Halaman login tidak dipakai sebagai gambar. Sebelum berkas itu ada, kartu tetap tampil dengan teks saja.
+Gambar kartu adalah tangkapan layar halaman masuk yang dikirim Hasan, disimpan di `public/works/echlo.jpg`. Di gambar itu tidak ada angka atau nama klien. Kaki gambar memuat tulisan © 2026 Naga Perkasa Group. Hak cipta dilindungi. Tulisan itu terlihat karena ada di dalam gambar, dan tidak diulang sebagai kalimat di halaman. Kartu tetap tanpa tautan.
 
 ### Alam Bukit Tigapuluh
 
@@ -248,7 +248,7 @@ Huruf pratinjau lokal: Funnel Display untuk judul, Geist untuk teks. Keduanya be
 
 Pratinjau lokal tidak menampilkan bilah cookie dan tidak menampilkan jendela newsletter. Bilah cookie pada demo hanya pemberitahuan persetujuan cookie. Situs ini tidak memasang cookie analitik atau iklan.
 
-Jarak pratinjau lokal mengikuti kotak yang sudah terukur: kartu profil mengikuti tinggi jendela, kolom isi, judul, kartu karya, layanan, keahlian, formulir, tombol kirim, dan kutipan kaki. Kutipan kaki memakai Geist. Angka ukur tidak ditulis di berkas ini. Halaman publik tidak diubah.
+Jarak pratinjau lokal mengikuti kotak yang sudah terukur: kartu profil mengikuti tinggi jendela, kolom isi, judul, dan kartu karya. Bagian layanan, keahlian, formulir, dan kutipan pada referensi tidak lagi menampilkan teks demo. Angka ukur tidak ditulis di berkas ini. Angka ukur tidak mengubah susunan halaman publik.
 
 Kartu profil dan kolom alat pada pratinjau lokal mengikuti susunan HTML referensi. Ikon lampu, pengaturan warna, dan tombol kembali ke atas memakai lingkaran. Kartu kiri punya garis tepi. Tulisan ketersediaan dibaca dari bawah ke atas. Kolom alat memuat sakelar mode, empat tautan dengan dua garis pemisah, tooltip, dan tombol kembali ke atas. Di layar sempit, daftar tautan itu disembunyikan. Sakelar mode tidak membalik halaman ke mode terang.
 
@@ -260,16 +260,18 @@ Yang sudah dipasang di pratinjau lokal:
 - Kalimat pembuka: Saya membangun website dan panel dari nol, lalu merawatnya. Berbasis di Bali.
 - Angka 8+ untuk pengalaman sejak 2018, dan 10+ untuk proyek selesai. Angka 10+ berasal dari Hasan dan mencakup desain grafis. Empat karya yang disebut namanya tetap yang di tabel Empat karya. Nama proyek desain grafis tidak ditambahkan.
 - Ikon kartu: Facebook `https://www.facebook.com/profile.php?id=61591124157352` dan Instagram `https://www.instagram.com/albasri.dev/`. Tidak ada tombol unduh CV.
-- Satu baris pendidikan: Ekonomi Pembangunan, Universitas Jambi, 2023. Garis di samping baris itu mengikuti guliran dan menembus titik.
-- Ilustrasi karakter pada kartu. Itu bukan foto Hasan.
+- Empat baris pendidikan, dari yang terbaru. Garis di samping baris itu mengikuti guliran dan menembus titik. 2016–2023, Ekonomi Pembangunan, Universitas Jambi. 2014–2016, SMK Revany Indra Putra, Kota Jambi. 2010–2014, SMPN 1 Muaro Jambi. 2004–2010, SDN 73 Muaro Jambi. Nama sekolah tidak diterjemahkan. "Jambi Luar Kota" tidak ditulis. Kelulusan universitas berakhir 2023, bukan Now.
+- Ilustrasi karakter pada kartu: potret dada gaya 3D, kemeja gelap, latar gelap, senyum, rambut digelung. Tangan tidak digambar. Itu bukan foto Hasan.
+- Bagian Tentang pada pratinjau lokal memakai kalimat Tentang yang terkunci. Judulnya: Tampilan dan fungsi berjalan bersama. Di bawah paragraf ada dua jalur, tanpa tahun: Website dan panel, dan Desain. Daftar penghargaan tidak ditampilkan.
+- Pratinjau lokal berbahasa Indonesia di seluruh teks pengunjung. Halaman Inggris yang sudah terbit tetap di `/en/`.
 - Tulisan kaki: AL BASRI terisi, DEV garis, monogram HB di tengah, dan baris hak cipta © 2026 Al Basri Dev.
 - Pita klien, pita penghargaan, dan bagian testimoni tidak ditampilkan.
 
-Yang masih contoh demo, menunggu giliran berikutnya: daftar penghargaan, kartu karya, layanan, batang keahlian, formulir, dan kutipan Steve Jobs. Halaman publik tidak diubah.
+Contoh demo yang sudah diganti: daftar penghargaan, kartu karya, layanan, batang keahlian, formulir, dan kutipan Steve Jobs. Kartu karya memakai empat karya di tabel Empat karya. Dua jalur layanan tampil di bawah paragraf Tentang, bukan sebagai bagian terpisah. Batang keahlian tidak ditampilkan karena angkanya tidak ada. Formulir diganti tiga saluran kontak. Kutipan Steve Jobs tidak ditampilkan. Tulisan kaki Al Basri Dev tetap. Halaman publik tidak memuat daftar sekolah, ilustrasi, atau susunan pratinjau ini.
 
 Contoh cara kerja kedua skrip tetap `script-bump.js`. Berkas contoh itu tidak diubah. Skrip, huruf pratinjau, dan hasil ukur diabaikan Git, termasuk berkas `isak-beranda-*` dan `isak-titik-*` yang tersimpan di akar folder.
 
-Halaman publik tetap memakai susunan yang sudah terbit. Data contoh yang masih tersisa, ilustrasi kartu, dan hasil ukur tidak di-commit dan tidak diunggah. Penggantian halaman publik menunggu persetujuan tampilan lokal.
+Susunan halaman publik tetap seperti yang sudah terbit. Perubahan halaman publik pada giliran ini hanya berkas tangkapan layar dan gambar kartu Echlo Beauty. Ilustrasi, daftar sekolah, berkas pratinjau, dan hasil ukur tidak di-commit dan tidak diunggah. Penggantian susunan halaman publik menunggu persetujuan tampilan lokal.
 
 ## Teknologi situs
 
@@ -286,7 +288,7 @@ Halaman publik tetap memakai susunan yang sudah terbit. Data contoh yang masih t
   - `src/styles/global.css` menyimpan palet, huruf, dan tata letak.
   - `public/favicon.svg` adalah monogram HB.
   - `public/fonts/` menyimpan Instrument Serif, Outfit, dan berkas lisensi OFL.
-  - `public/works/rota.jpg`, `public/works/lexafx.jpg`, dan `public/works/alam-bukit.jpg` adalah tangkapan layar.
+  - `public/works/rota.jpg`, `public/works/lexafx.jpg`, `public/works/alam-bukit.jpg`, dan `public/works/echlo.jpg` adalah tangkapan layar.
   - `.github/workflows/deploy.yml` membangun situs dan mengunggahnya ke GitHub Pages.
 
 ## Tidak masuk ke situs portofolio
@@ -295,8 +297,8 @@ Halaman publik tetap memakai susunan yang sudah terbit. Data contoh yang masih t
 - Formulir kontak.
 - Tautan Twitter dan profil GitHub. Unggah ke GitHub Pages tetap dilakukan. Nomor ditampilkan sebagai WhatsApp, tanpa tautan telepon terpisah. Ikon Facebook hanya ada pada pratinjau lokal. Halaman yang sudah terbit belum menampilkan Facebook.
 - Foto diri pada halaman yang sudah terbit. Favicon monogram HB tetap ada. Pratinjau lokal memakai ilustrasi karakter, bukan foto Hasan.
-- Bagian riwayat terpisah, penghargaan, dan batang keahlian pada halaman yang sudah terbit. Kalimat kelulusan di bagian Tentang tetap ada. Pratinjau lokal punya satu baris pendidikan, seperti di bagian Pemeriksaan tampilan.
-- SMK, magang, admin, esports, turnamen, dukungan POS, Sangkek, SoU Group, WWF, Ai-CHA, DLT Universitas Jambi, Sorot Jambi, situs dosen Muhammad Ridwansyah, dan Mitra Kevin Abadi.
+- Bagian riwayat terpisah, penghargaan, dan batang keahlian pada halaman yang sudah terbit. Kalimat kelulusan di bagian Tentang tetap ada. Pratinjau lokal punya empat baris pendidikan, seperti di bagian Pemeriksaan tampilan.
+- Daftar SD, SMP, dan SMK pada halaman yang sudah terbit. Pratinjau lokal memuat SDN 73 Muaro Jambi, SMPN 1 Muaro Jambi, dan SMK Revany Indra Putra, Kota Jambi. Magang, admin, esports, turnamen, dukungan POS, Sangkek, SoU Group, WWF, Ai-CHA, DLT Universitas Jambi, Sorot Jambi, situs dosen Muhammad Ridwansyah, dan Mitra Kevin Abadi tetap di luar.
 - Umur, tanggal lahir, agama, jenis kelamin, dan alamat jalan. Nilai itu tidak disalin ke dokumen ini.
 - Email `hasan.n.dev@mail.com`. Email yang dipakai hanya `hasan.n.dev@gmail.com`.
 - Elementor dan nama tema WordPress, di halaman maupun di kartu.
@@ -310,7 +312,7 @@ Salah: menambah kartu Sangkek karena namanya ada di CV. Benar: tolak. Karya publ
 
 Salah: menerjemahkan LexaFX di halaman Inggris. Benar: nama tetap. Yang berganti hanya kalimat deskripsi.
 
-Salah: tombol Echlo menuju halaman login. Benar: kartu tanpa tautan, dengan penjelasan panel.
+Salah: tombol Echlo menuju halaman masuk. Benar: kartu memakai gambar halaman masuk, tanpa tautan, dengan penjelasan panel.
 
 ## Saat kode sudah ada
 

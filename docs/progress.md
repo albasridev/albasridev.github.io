@@ -22,9 +22,9 @@ Daftar periksa pembangunan. Fakta isi situs ada di `docs/spesifikasi.md`. Berkas
 - [x] Bagian Kontak
 - [x] Sakelar `ID` / `EN`, jalur `/` dan `/en`, tanpa jalur `/id`
 - [x] Layar sempit: satu kolom, menu bisa diketuk, tidak ada gulir mendatar
-- [x] Tangkapan layar Rota International, LexaFX, dan Alam Bukit Tigapuluh disimpan di repositori
-- [x] Kartu Echlo Beauty tampil dengan teks, tanpa tautan, dan tanpa gambar halaman login
-- [ ] Gambar Echlo Beauty, hanya setelah Hasan mengirim tangkapan layar dengan data klien tertutup
+- [x] Tangkapan layar Rota International, LexaFX, Alam Bukit Tigapuluh, dan Echlo Beauty disimpan di repositori
+- [x] Kartu Echlo Beauty tampil dengan gambar halaman masuk, tanpa tautan, dan tanpa data klien
+- [x] Pratinjau lokal memakai ilustrasi senyum dengan rambut digelung, empat baris pendidikan, dan teks Indonesia di seluruh halaman. Tidak di-commit dan tidak diunggah
 - [x] Perintah menjalankan di README disamakan dengan `package.json`
 - [x] Tata letak berkas kode ditulis di spesifikasi, bagian Teknologi situs
 - [x] Alur unggah ke `https://albasridev.github.io` tertulis di README

@@ -4,6 +4,14 @@ Entri terbaru di atas. Tiap entri memuat tanggal, apa yang berubah, dan kenapa.
 
 ## 2026-10-29
 
+Gambar karya dan pratinjau lokal disamakan dengan keputusan Hasan, supaya kartu dan teks yang terlihat tidak lagi menunggu berkas atau memakai contoh demo.
+
+- Empat tangkapan layar disimpan di `public/works/`. Kartu Echlo Beauty memakai gambar halaman masuk, tanpa tautan. Kaki gambar memuat Naga Perkasa Group, dan nama itu tidak diulang sebagai kalimat di halaman.
+- Pratinjau lokal memakai ilustrasi potret dada yang tersenyum, dengan rambut digelung. Bagian Tentang, empat baris pendidikan, kartu karya, dan kontak memakai teks Indonesia. Penghargaan demo, batang keahlian, formulir, dan kutipan Steve Jobs tidak ditampilkan.
+- Daftar sekolah hanya ada di pratinjau lokal. Halaman publik tidak memuat daftar itu. Berkas pratinjau tidak di-commit.
+
+## 2026-10-29
+
 Pratinjau lokal mulai memakai data Hasan pada bagian yang sudah disepakati, supaya perbandingan UI tidak lagi memakai nama dan angka demo di bagian itu.
 
 - Nama di pembuka menjadi Hasan Basri. Angka pengalaman 8+ sejak 2018, dan angka proyek selesai 10+. Angka 10+ dari Hasan, termasuk desain grafis. Empat karya bernama tidak ditambah.
