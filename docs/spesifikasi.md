@@ -43,17 +43,17 @@ Skill Cursor tidak dibuat. Prosedur revisi cukup pendek untuk tinggal di aturan.
 - Nama publik: Hasan Basri.
 - Peran, ditulis sama di Indonesia dan Inggris: Web Developer & Graphic Designer.
 - Lokasi publik: Bali.
-- Pendidikan, satu kalimat di bagian Tentang: lulus Ekonomi Pembangunan dari Universitas Jambi pada 2023.
+- Pendidikan tampil sebagai empat baris di bagian Pendidikan. Paragraf Tentang tidak memuat kalimat kelulusan.
 - Audiens: campuran klien dan perekrut.
 - Nama Tim2San dan tautan tim2san.com tidak dipakai di situs portofolio.
-- Nama di pembuka tetap Hasan Basri. Tulisan kaki pada pratinjau lokal adalah Al Basri Dev. Halaman yang sudah terbit belum memakai tulisan kaki itu.
+- Nama di pembuka tetap Hasan Basri. Tulisan kaki halaman yang sudah terbit adalah Al Basri Dev.
 
 ## Tujuan pengunjung
 
 1. Melihat karya.
 2. Menghubungi Hasan.
 
-Tombol utama pembuka, **Lihat karya**, menggulir ke `#karya`. Tombol kedua, **Hubungi saya**, menggulir ke `#kontak`. Di bagian kontak, WhatsApp ada di urutan pertama.
+Tombol pada kartu profil, **Hubungi saya**, menggulir ke `#contact`. Di bagian kontak, WhatsApp ada di urutan pertama.
 
 ## Bahasa
 
@@ -61,8 +61,8 @@ Tombol utama pembuka, **Lihat karya**, menggulir ke `#karya`. Tombol kedua, **Hu
 - Bahasa Inggris ada di `/en/`. Berkas hasil bangunnya `dist/en/index.html`.
 - Jalur `/id` tidak dibuat.
 - Sakelar di menu atas memakai teks `ID` dan `EN`. Halaman yang sedang terbuka ditandai aktif.
-- Sakelar menjaga posisi. Contoh: `/` bertukar dengan `/en/`, dan `/#kontak` bertukar dengan `/en/#kontak`.
-- Jangkar sama di kedua bahasa: `karya`, `layanan`, `tentang`, `kontak`.
+- Sakelar menjaga posisi. Contoh: `/` bertukar dengan `/en/`, dan `/#contact` bertukar dengan `/en/#contact`.
+- Jangkar sama di kedua bahasa: `home`, `about`, `education`, `work`, `contact`.
 - Halaman Indonesia memakai `lang="id"`. Halaman Inggris memakai `lang="en"`.
 - Yang diterjemahkan: menu, judul bagian, tombol, dan kalimat deskripsi.
 - Yang tidak diterjemahkan: Hasan Basri, Web Developer & Graphic Designer, Rota International, LexaFX, Helix, Echlo Beauty, Alam Bukit Tigapuluh, MetaTrader 5, Ekonomi Pembangunan, Universitas Jambi, SDN 73 Muaro Jambi, SMPN 1 Muaro Jambi, SMK Revany Indra Putra, Bali, Jambi, Kota Jambi, WordPress, React, Node.js, PHP, WhatsApp, Instagram, Email.
@@ -71,17 +71,18 @@ Teks kedua bahasa disimpan terpisah. Jangan mencampur terjemahan di tengah kalim
 
 ## Susunan halaman
 
-Satu halaman yang digulir, urutannya tetap:
+Satu halaman yang digulir, urutannya sama dengan tampilan lokal yang disetujui:
 
-1. Pembuka.
-2. Karya.
-3. Yang saya kerjakan, jangkar `layanan`. Bagian ini ada di halaman, tidak ada di menu.
-4. Tentang.
-5. Kontak.
+1. Kartu profil dan pembuka, jangkar `home`.
+2. Tentang, jangkar `about`. Dua jalur layanan ada di bawah paragraf ini, tanpa bagian terpisah.
+3. Pendidikan, jangkar `education`.
+4. Karya, jangkar `work`.
+5. Kontak, jangkar `contact`.
+6. Tulisan kaki Al Basri Dev.
 
-Tautan bagian hanya tiga: Karya, Tentang, Kontak. Sakelar bahasa ada di menu atas, di samping ketiga tautan itu. Di layar sempit menu tetap bisa dipilih dengan ketukan, tanpa gulir mendatar.
+Menu ikon: Beranda, Tentang, Pendidikan, Kontak. Sakelar `ID` / `EN` ada di kepala halaman dan di menu layar sempit. Di layar sempit menu tetap bisa dipilih dengan ketukan, tanpa gulir mendatar.
 
-Tidak ada halaman detail karya. Tidak ada bagian riwayat kerja terpisah pada halaman yang sudah terbit. Baris pendidikan pada pratinjau lokal dijelaskan di bagian Pemeriksaan tampilan.
+Tidak ada halaman detail karya. Empat baris pendidikan ada di halaman yang sudah terbit, sama dengan bagian Pemeriksaan tampilan.
 
 ## Teks terkunci
 
@@ -89,9 +90,10 @@ Tidak ada halaman detail karya. Tidak ada bagian riwayat kerja terpisah pada hal
 
 | Indonesia | Inggris | Tujuan |
 | --- | --- | --- |
-| Karya | Work | `#karya` |
-| Tentang | About | `#tentang` |
-| Kontak | Contact | `#kontak` |
+| Beranda | Home | `#home` |
+| Tentang | About | `#about` |
+| Pendidikan | Education | `#education` |
+| Kontak | Contact | `#contact` |
 
 ### Pembuka
 
@@ -107,10 +109,9 @@ Pembuka tidak menulis "Berbasis di Bali". Deskripsi singkat tetap menyebut Bali.
 
 | Tombol | Indonesia | Inggris | Tujuan |
 | --- | --- | --- | --- |
-| Utama | Lihat karya | View work | `#karya` |
-| Kedua | Hubungi saya | Contact me | `#kontak` |
+| Kartu | Hubungi saya | Contact me | `#contact` |
 
-Tidak ada foto pada halaman yang sudah terbit. Monogram HB hanya untuk favicon. Ilustrasi pada pratinjau lokal dijelaskan di bagian Pemeriksaan tampilan.
+Tidak ada foto pada halaman yang sudah terbit. Monogram HB untuk favicon dan tanda di kartu. Ilustrasi kartu dijelaskan di bagian Pemeriksaan tampilan.
 
 Judul tab sama di kedua bahasa: `Hasan Basri | Web Developer & Graphic Designer`.
 
@@ -119,9 +120,9 @@ Deskripsi singkat:
 - Indonesia: Portofolio Hasan Basri, web developer dan graphic designer di Bali.
 - Inggris: Portfolio of Hasan Basri, a web developer and graphic designer in Bali.
 
-### Yang saya kerjakan
+### Dua jalur
 
-Judul bagian: Yang saya kerjakan / What I do.
+Dua jalur ini ada di bawah paragraf Tentang. Halaman tidak menampilkan judul "Yang saya kerjakan".
 
 Dua jalur, tanpa daftar logo:
 
@@ -140,11 +141,11 @@ Inggris:
 
 I combine web design, brand identity, and no-code development to help businesses move faster without losing their original character. Every project blends strategy and style, so the design is not only attractive, but also functional and has a real impact.
 
-Judul bagian di halaman publik tetap Tentang / About. Di pratinjau lokal, judul di dalam bagian itu adalah: Indonesia `Merancang merek dan website dengan kejelasan, kreativitas, dan kecepatan no-code.` Inggris `Designing brands and websites with clarity, creativity, and no-code speed.` Kelulusan tidak ditulis di paragraf ini. Kelulusan tetap di timeline pendidikan pratinjau lokal. Kata vibe coder tidak dipakai di teks pengunjung.
+Label bagian: Tentang / About. Judul di dalam bagian itu: Indonesia `Merancang merek dan website dengan kejelasan, kreativitas, dan kecepatan no-code.` Inggris `Designing brands and websites with clarity, creativity, and no-code speed.` Kelulusan tidak ditulis di paragraf ini. Kelulusan ada di bagian Pendidikan. Kata vibe coder tidak dipakai di teks pengunjung.
 
 ### Kontak
 
-Judul: Kontak / Contact.
+Label menu: Kontak / Contact. Judul yang terlihat di bagian ini adalah kalimat pembukanya.
 
 Indonesia: Hubungi saya lewat WhatsApp, email, atau Instagram.
 
@@ -164,10 +165,12 @@ Tautan WhatsApp tidak membawa pesan siap kirim. Tidak ada formulir. WhatsApp dan
 
 Urutan tampil:
 
-1. Rota International, kartu utama, dengan tangkapan layar situs klien.
-2. LexaFX, kartu utama, dengan tangkapan layar situs klien.
-3. Echlo Beauty, kartu utama, dengan tangkapan layar halaman masuk, tanpa tautan.
-4. Alam Bukit Tigapuluh, kartu sekunder di bawah tiga kartu utama. Kartunya lebih kecil, dengan tangkapan layar dan tautan.
+1. Rota International, dengan tangkapan layar situs klien.
+2. LexaFX, dengan tangkapan layar situs klien.
+3. Echlo Beauty, dengan tangkapan layar halaman masuk, tanpa tautan.
+4. Alam Bukit Tigapuluh, dengan tangkapan layar dan tautan.
+
+Empat kartu sama ukurannya dan tersusun berurutan.
 
 Tangkapan layar Rota International, LexaFX, Alam Bukit Tigapuluh, dan Echlo Beauty disimpan di repositori, tidak ditautkan langsung dari situs klien. Untuk tiga situs yang punya beranda, teks alternatifnya memakai nama karya: Indonesia `Tangkapan layar beranda …`, Inggris `Screenshot of the … homepage`. Echlo Beauty memakai tangkapan layar halaman masuk. Teks alternatifnya: Indonesia `Tangkapan layar halaman masuk Echlo Beauty`, Inggris `Screenshot of the Echlo Beauty sign-in page`.
 
@@ -212,33 +215,29 @@ Indonesia: Situs perusahaan restorasi ekosistem di Jambi. Dibangun dari nol deng
 
 Inggris: Company site for an ecosystem restoration concession in Jambi. Built from scratch with WordPress and still maintained.
 
-Nama publik tetap Hasan Basri. Tulisan Al Basri Dev di footer situs klien tidak dibawa ke halaman yang sudah terbit. Pratinjau lokal memakai tulisan kaki Al Basri Dev.
+Nama publik tetap Hasan Basri. Tulisan Al Basri Dev di footer situs klien tidak dibawa sebagai kredit pekerjaan klien. Tulisan kaki situs portofolio adalah Al Basri Dev.
 
 ## Tampilan
 
-Gelap dari awal. Tidak ada mode terang.
+Gelap dari awal. Tidak ada mode terang. Halaman yang sudah terbit memakai tampilan lokal yang disetujui: kartu profil di kiri pada jendela lebar, kolom isi di kanan, dan tombol hijau.
 
 | Token | Nilai | Pemakaian |
 | --- | --- | --- |
-| Latar | `#121417` | Seluruh halaman |
-| Teks | `#f3f1ea` | Teks utama |
-| Teks redup | `#b7b3a8` | Keterangan |
-| Aksen | `#8eafd4` | Tautan, garis, dan tanda bahasa yang aktif |
-| Garis | `rgba(243, 241, 234, 0.14)` | Pemisah |
+| Latar | `#0f0f0f` | Seluruh halaman |
+| Teks | `#fff` | Teks utama |
+| Teks redup | `rgba(255, 255, 255, 0.72)` | Keterangan |
+| Aksen | `#00de51` | Tombol, titik, dan tanda bahasa yang aktif |
+| Garis | `rgba(255, 255, 255, 0.06)` | Pemisah |
 
-Aksen dipakai untuk tautan, garis, dan tanda bahasa yang aktif. Teks kecil yang bukan tautan memakai warna teks utama atau teks redup.
+Huruf judul: Funnel Display. Huruf teks: Geist. Keduanya berlisensi SIL Open Font License dan disimpan di `public/fonts/`. Jika font gagal dimuat, pakai serif cadangan untuk judul dan sans-serif cadangan untuk teks. Instrument Serif dan Outfit tidak dipakai lagi.
 
-Huruf judul: Instrument Serif. Huruf teks: Outfit. Saat kode dibuat, kedua font disimpan di repositori. Jika font gagal dimuat, pakai serif cadangan untuk judul dan sans-serif cadangan untuk teks.
-
-Banyak ruang kosong. Ukuran kartu mengikuti bagian Empat karya. Gerakan hanya transisi singkat saat kursor berada di atas elemen, dan saat bahasa berganti. Hormati `prefers-reduced-motion`. Isi halaman tidak menunggu animasi.
-
-Kepala halaman, yang memuat nama dan menu, menempel saat halaman digulir. Saat tautan jangkar dibuka, judul bagian tetap terlihat di bawah kepala itu.
+Gerakan hanya transisi singkat saat kursor berada di atas elemen, saat bahasa berganti, dan saat angka pengalaman terhitung. Hormati `prefers-reduced-motion`. Isi halaman tidak menunggu animasi. Sakelar mode tetap gelap. Tombol pengaturan warna tidak membuka panel.
 
 Acuan yang tidak ditiru: `https://mardiansyah-gunting.github.io/personal/`. Jangan membawa menu bernomor, grafik frekuensi keahlian, galeri foto per jabatan, atau deretan riwayat kerja yang panjang.
 
 ## Pemeriksaan tampilan
 
-Beranda `https://isak.botble.com/` dibandingkan di komputer lewat folder `_isak_preview/`. Folder itu diabaikan Git. Pratinjau lokal sudah memakai sebagian data Hasan. Halaman yang sudah terbit belum diganti.
+Beranda `https://isak.botble.com/` dibandingkan di komputer lewat folder `_isak_preview/`. Folder itu diabaikan Git. Halaman yang sudah terbit memakai susunan tampilan lokal yang disetujui.
 
 Skrip otomatisnya `_isak_preview/ukur-beranda.js`. Tempel berkas itu di konsol pada beranda referensi. Skrip membaca ukuran huruf, warna, jarak, radius, dan bayangan, lalu menyimpan dua berkas di `_isak_preview/exports/`. Salinan yang sama ada di `window.__ISAK_HOME_MEASURE__`. Halaman tidak diklik, tidak digulir, dan isi serta gayanya tidak diubah. Teks pengunjung tidak disimpan, hanya panjang teks. Jika skrip masih berjalan, tempelan berikutnya ditolak.
 
@@ -246,7 +245,7 @@ Skrip turnya `_isak_preview/ukur-titik.js`. Tempel berkas itu di konsol yang sam
 
 Kutipan kaki tidak menerima klik, jadi ukurannya dibaca langsung dari `p.quote-text` pada jendela lebar dan layar sempit. Kelas `font-3` tertulis dua kali: yang pertama EB Garamond, yang belakangan Inter. Huruf yang terlihat mengikuti yang belakangan, yaitu Inter. Judul layanan dibaca langsung dari `h3` di dalam baris accordion. Hasil bacaan itu tidak di-commit dan tidak diunggah.
 
-Huruf pratinjau lokal: Funnel Display untuk judul, Geist untuk teks. Keduanya berlisensi SIL Open Font License. Berkas huruf dan teks lisensi ada di `_isak_preview/fonts/`. Geist Mono tidak dipakai. Halaman publik tetap memakai Instrument Serif dan Outfit sampai tampilan lokal disetujui.
+Huruf halaman publik dan pratinjau lokal: Funnel Display untuk judul, Geist untuk teks. Keduanya berlisensi SIL Open Font License. Berkas yang diunggah ada di `public/fonts/`. Salinan lokal ada di `_isak_preview/fonts/`. Geist Mono tidak dipakai.
 
 Pratinjau lokal tidak menampilkan bilah cookie dan tidak menampilkan jendela newsletter. Bilah cookie pada demo hanya pemberitahuan persetujuan cookie. Situs ini tidak memasang cookie analitik atau iklan.
 
@@ -254,26 +253,26 @@ Jarak pratinjau lokal mengikuti kotak yang sudah terukur: kartu profil mengikuti
 
 Kartu profil dan kolom alat pada pratinjau lokal mengikuti susunan HTML referensi. Ikon lampu, pengaturan warna, dan tombol kembali ke atas memakai lingkaran. Kartu kiri punya garis tepi. Tulisan ketersediaan dibaca dari bawah ke atas. Kolom alat memuat sakelar mode, empat tautan dengan dua garis pemisah, tooltip, dan tombol kembali ke atas. Di layar sempit, daftar tautan itu disembunyikan. Sakelar mode tidak membalik halaman ke mode terang.
 
-Jam pada pratinjau lokal terdiri dari dua baris berukuran teks kecil. Di layar sempit, logo tampil di kepala halaman dan logo pada kartu disembunyikan. Label bagian memakai ukuran keterangan kecil dan ikon.
+Jam di kepala halaman terdiri dari dua baris berukuran teks kecil. Bahasa Indonesia memakai singkatan hari Min–Sab dan bulan Mei, Agu, Okt, Des. Bahasa Inggris memakai Sun–Sat dan May, Aug, Oct, Dec. Di layar sempit, logo tampil di kepala halaman dan logo pada kartu disembunyikan. Label bagian memakai ukuran keterangan kecil dan ikon.
 
-Yang sudah dipasang di pratinjau lokal:
+Yang tampil di halaman yang sudah terbit, dan sama di pratinjau lokal:
 
 - Nama di pembuka: Hasan Basri. Peran: Web Developer & Graphic Designer.
-- Kalimat pembuka: Membangun Sistem & Panel Kustom dari Nol dengan Pemeliharaan Jangka Panjang. Tulisan ketersediaan: Terbuka untuk Kolaborasi.
-- Angka 8+ untuk pengalaman sejak 2018, dan 10+ untuk proyek selesai. Angka 10+ berasal dari Hasan dan mencakup desain grafis. Empat karya yang disebut namanya tetap yang di tabel Empat karya. Nama proyek desain grafis tidak ditambahkan.
-- Ikon kartu: Facebook `https://www.facebook.com/profile.php?id=61591124157352` dan Instagram `https://www.instagram.com/albasri.dev/`. Tidak ada tombol unduh CV.
+- Kalimat pembuka: Membangun Sistem & Panel Kustom dari Nol dengan Pemeliharaan Jangka Panjang. Tulisan ketersediaan: Terbuka untuk Kolaborasi. Inggris: Open for collaboration. Sapaan: Halo, saya Hasan Basri / Hello, I'm Hasan Basri.
+- Angka 8+ untuk pengalaman sejak 2018, label Tahun pengalaman / Years of experience. Angka 10+ untuk proyek selesai, label Proyek selesai / Projects completed. Angka 10+ berasal dari Hasan dan mencakup desain grafis. Empat karya yang disebut namanya tetap yang di tabel Empat karya. Nama proyek desain grafis tidak ditambahkan.
+- Ikon kartu: Facebook `https://www.facebook.com/profile.php?id=61591124157352` dan Instagram `https://www.instagram.com/albasri.dev`. Tidak ada tombol unduh CV.
 - Empat baris pendidikan, dari yang terbaru. Garis di samping baris itu mengikuti guliran dan menembus titik. 2016–2023, Ekonomi Pembangunan, Universitas Jambi. 2014–2016, SMK Revany Indra Putra, Kota Jambi. 2010–2014, SMPN 1 Muaro Jambi. 2004–2010, SDN 73 Muaro Jambi. Nama sekolah tidak diterjemahkan. "Jambi Luar Kota" tidak ditulis. Kelulusan universitas berakhir 2023, bukan Now.
 - Ilustrasi karakter pada kartu: potret dada gaya 3D, kemeja gelap, latar gelap, senyum, rambut digelung. Tangan tidak digambar. Itu bukan foto Hasan.
-- Bagian Tentang pada pratinjau lokal memakai kalimat Tentang yang terkunci. Judulnya: Merancang merek dan website dengan kejelasan, kreativitas, dan kecepatan no-code. Di bawah paragraf ada dua jalur, tanpa tahun: Website & Panel, dan Desain. Daftar penghargaan tidak ditampilkan.
-- Pratinjau lokal berbahasa Indonesia di seluruh teks pengunjung. Halaman Inggris yang sudah terbit tetap di `/en/`.
+- Bagian Tentang memakai kalimat Tentang yang terkunci. Judulnya: Merancang merek dan website dengan kejelasan, kreativitas, dan kecepatan no-code. Di bawah paragraf ada dua jalur, tanpa tahun: Website & Panel, dan Desain. Daftar penghargaan tidak ditampilkan.
+- Pratinjau lokal berbahasa Indonesia di seluruh teks pengunjung. Halaman Inggris di `/en/` memakai susunan yang sama, dengan teks yang diterjemahkan.
 - Tulisan kaki: AL BASRI terisi, DEV garis, monogram HB di tengah, dan baris hak cipta © 2026 Al Basri Dev.
 - Pita klien, pita penghargaan, dan bagian testimoni tidak ditampilkan.
 
-Contoh demo yang sudah diganti: daftar penghargaan, kartu karya, layanan, batang keahlian, formulir, dan kutipan Steve Jobs. Kartu karya memakai empat karya di tabel Empat karya. Dua jalur layanan tampil di bawah paragraf Tentang, bukan sebagai bagian terpisah. Batang keahlian tidak ditampilkan karena angkanya tidak ada. Formulir diganti tiga saluran kontak. Kutipan Steve Jobs tidak ditampilkan. Tulisan kaki Al Basri Dev tetap. Halaman publik tidak memuat daftar sekolah, ilustrasi, atau susunan pratinjau ini.
+Contoh demo yang sudah diganti: daftar penghargaan, kartu karya, layanan, batang keahlian, formulir, dan kutipan Steve Jobs. Kartu karya memakai empat karya di tabel Empat karya. Dua jalur layanan tampil di bawah paragraf Tentang, bukan sebagai bagian terpisah. Batang keahlian tidak ditampilkan karena angkanya tidak ada. Formulir diganti tiga saluran kontak. Kutipan Steve Jobs tidak ditampilkan. Tulisan kaki Al Basri Dev, ilustrasi kartu, dan empat baris pendidikan ada di halaman yang sudah terbit.
 
 Contoh cara kerja kedua skrip tetap `script-bump.js`. Berkas contoh itu tidak diubah. Skrip, huruf pratinjau, dan hasil ukur diabaikan Git, termasuk berkas `isak-beranda-*` dan `isak-titik-*` yang tersimpan di akar folder.
 
-Susunan halaman publik tetap seperti yang sudah terbit. Perubahan halaman publik pada giliran ini hanya berkas tangkapan layar dan gambar kartu Echlo Beauty. Ilustrasi, daftar sekolah, berkas pratinjau, dan hasil ukur tidak di-commit dan tidak diunggah. Penggantian susunan halaman publik menunggu persetujuan tampilan lokal.
+Hasan menyetujui tampilan lokal untuk halaman publik. Situs Astro memakai susunan itu. Folder `_isak_preview/` tetap perbandingan lokal, diabaikan Git, dan tidak disalin apa adanya. Ilustrasi kartu dan huruf yang dipakai disalin ke `public/` supaya bisa diunggah. Hasil ukur tidak di-commit.
 
 ## Teknologi situs
 
@@ -289,7 +288,8 @@ Susunan halaman publik tetap seperti yang sudah terbit. Perubahan halaman publik
   - `src/data/copy.ts` menyimpan teks pengunjung yang disalin dari spesifikasi ini.
   - `src/styles/global.css` menyimpan palet, huruf, dan tata letak.
   - `public/favicon.svg` adalah monogram HB.
-  - `public/fonts/` menyimpan Instrument Serif, Outfit, dan berkas lisensi OFL.
+  - `public/fonts/` menyimpan Funnel Display, Geist, dan berkas lisensi OFL.
+  - `public/avatar-kartu.jpg` adalah ilustrasi kartu.
   - `public/works/rota.jpg`, `public/works/lexafx.jpg`, `public/works/alam-bukit.jpg`, dan `public/works/echlo.jpg` adalah tangkapan layar.
   - `.github/workflows/deploy.yml` membangun situs dan mengunggahnya ke GitHub Pages.
 
@@ -297,10 +297,10 @@ Susunan halaman publik tetap seperti yang sudah terbit. Perubahan halaman publik
 
 - Tombol unduh CV. Kedua PDF ini bahan internal: `CV ATS Hasan Basri.pdf` dan `Curriculum Vitae Hasan Basri Baru.pdf`.
 - Formulir kontak.
-- Tautan Twitter dan profil GitHub. Unggah ke GitHub Pages tetap dilakukan. Nomor ditampilkan sebagai WhatsApp, tanpa tautan telepon terpisah. Ikon Facebook hanya ada pada pratinjau lokal. Halaman yang sudah terbit belum menampilkan Facebook.
-- Foto diri pada halaman yang sudah terbit. Favicon monogram HB tetap ada. Pratinjau lokal memakai ilustrasi karakter, bukan foto Hasan.
-- Bagian riwayat terpisah, penghargaan, dan batang keahlian pada halaman yang sudah terbit. Kalimat kelulusan di bagian Tentang tetap ada. Pratinjau lokal punya empat baris pendidikan, seperti di bagian Pemeriksaan tampilan.
-- Daftar SD, SMP, dan SMK pada halaman yang sudah terbit. Pratinjau lokal memuat SDN 73 Muaro Jambi, SMPN 1 Muaro Jambi, dan SMK Revany Indra Putra, Kota Jambi. Magang, admin, esports, turnamen, dukungan POS, Sangkek, SoU Group, WWF, Ai-CHA, DLT Universitas Jambi, Sorot Jambi, situs dosen Muhammad Ridwansyah, dan Mitra Kevin Abadi tetap di luar.
+- Tautan Twitter dan profil GitHub. Unggah ke GitHub Pages tetap dilakukan. Nomor ditampilkan sebagai WhatsApp, tanpa tautan telepon terpisah. Ikon Facebook ada di kartu profil, menuju profil yang tertulis di bagian Pemeriksaan tampilan.
+- Foto diri Hasan. Yang tampil adalah ilustrasi kartu, bukan foto. Favicon monogram HB tetap ada.
+- Penghargaan, batang keahlian, formulir, dan kutipan. Empat baris pendidikan di bagian Pemeriksaan tampilan tampil di halaman yang sudah terbit.
+- Magang, admin, esports, turnamen, dukungan POS, Sangkek, SoU Group, WWF, Ai-CHA, DLT Universitas Jambi, Sorot Jambi, situs dosen Muhammad Ridwansyah, dan Mitra Kevin Abadi.
 - Umur, tanggal lahir, agama, jenis kelamin, dan alamat jalan. Nilai itu tidak disalin ke dokumen ini.
 - Email `hasan.n.dev@mail.com`. Email yang dipakai hanya `hasan.n.dev@gmail.com`.
 - Elementor dan nama tema WordPress, di halaman maupun di kartu.
@@ -310,7 +310,7 @@ Abaikan lokasi, jabatan, dan daftar pekerjaan di dalam kedua PDF. Pakai identita
 
 ## Contoh keputusan
 
-Salah: menambah kartu Sangkek karena namanya ada di CV. Benar: tolak. Karya publik yang disebut namanya hanya empat baris di tabel bagian Empat karya. Angka 10+ pada pratinjau tidak menambah kartu.
+Salah: menambah kartu Sangkek karena namanya ada di CV. Benar: tolak. Karya publik yang disebut namanya hanya empat baris di tabel bagian Empat karya. Angka 10+ tidak menambah kartu.
 
 Salah: menerjemahkan LexaFX di halaman Inggris. Benar: nama tetap. Yang berganti hanya kalimat deskripsi.
 

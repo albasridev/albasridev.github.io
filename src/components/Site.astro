@@ -1,6 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
-import { contacts, copy, role, siteName, type Locale } from "../data/copy";
+import { contacts, copy, education, role, siteName, type Locale } from "../data/copy";
 
 interface Props {
   locale: Locale;
@@ -9,139 +9,352 @@ interface Props {
 const { locale } = Astro.props;
 const text = copy[locale];
 const otherHref = locale === "id" ? "/en/" : "/";
-const featured = text.works.filter((work) => work.featured);
-const secondary = text.works.filter((work) => !work.featured);
+const otherLabel = locale === "id" ? "EN" : "ID";
+const days = locale === "id"
+  ? ["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"]
+  : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const months = locale === "id"
+  ? ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu", "Sep", "Okt", "Nov", "Des"]
+  : ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 ---
 
 <Base locale={locale} description={text.description}>
-  <header class="site-header">
-    <div class="wrap">
-      <p class="wordmark">{siteName}</p>
-      <nav class="nav" aria-label={locale === "id" ? "Bagian" : "Sections"}>
-        <a href="#karya">{text.nav.karya}</a>
-        <a href="#tentang">{text.nav.tentang}</a>
-        <a href="#kontak">{text.nav.kontak}</a>
-        <p class="langs">
-          {locale === "id" ? (
-            <span aria-current="page">ID</span>
-          ) : (
-            <a href="/" data-lang-switch>ID</a>
-          )}
-          {locale === "en" ? (
-            <span aria-current="page">EN</span>
-          ) : (
-            <a href={otherHref} data-lang-switch>EN</a>
-          )}
-        </p>
-      </nav>
+  <header class="topbar">
+    <a class="site-logo" href="#home" aria-label={siteName}>
+      <svg viewBox="0 0 32 32" aria-hidden="true"><text x="16" y="21" text-anchor="middle" font-family="Funnel Display, Georgia, serif" font-size="12" fill="#fff">HB</text></svg>
+    </a>
+    <div class="time-local">
+      <p id="today"></p>
+      <p id="clock">00:00</p>
+      <p class="top-langs">
+        {locale === "id" ? <span aria-current="page">ID</span> : <a href="/" data-lang-switch>ID</a>}
+        {locale === "en" ? <span aria-current="page">EN</span> : <a href={otherHref} data-lang-switch>EN</a>}
+      </p>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="wrap">
-        <h1>{siteName}</h1>
-        <p class="role">{role}</p>
-        <p class="lede">{text.hero}</p>
-        <div class="actions">
-          <a class="button" href="#karya">{text.viewWork}</a>
-          <a class="button secondary" href="#kontak">{text.contactMe}</a>
+  <aside class="profile">
+    <div class="profile-card">
+      <img class="profile-photo" src="/avatar-kartu.jpg" alt="" width="720" height="1280" />
+      <a class="logo" href="#home" aria-label={siteName}>
+        <svg viewBox="0 0 32 32" aria-hidden="true"><text x="16" y="21" text-anchor="middle" font-family="Funnel Display, Georgia, serif" font-size="12" fill="#fff">HB</text></svg>
+      </a>
+      <nav class="socials" aria-label={locale === "id" ? "Sosial" : "Social"}>
+        <a href="https://www.facebook.com/profile.php?id=61591124157352" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path></svg></a>
+        <a href="https://www.instagram.com/albasri.dev" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"></rect><circle cx="12" cy="12" r="3.5"></circle><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"></circle></svg></a>
+      </nav>
+      <div class="meta-left">
+        <p class="available vertical"><span class="dot" aria-hidden="true"></span><span>{text.availability}</span></p>
+      </div>
+      <div class="profile-copy">
+        <p class="available flat"><span class="dot" aria-hidden="true"></span><span>{text.availability}</span></p>
+        <p class="hello">{text.hello}</p>
+        <p class="introduce">{text.hero}</p>
+        <div class="card-line"></div>
+        <div class="profile-actions">
+          <a class="pill" href="#contact"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span><span class="text">{text.contactMe}</span></a>
         </div>
       </div>
-    </section>
+    </div>
+  </aside>
 
-    <section class="section" id="karya">
-      <div class="wrap">
-        <h2 class="section-heading">{text.nav.karya}</h2>
-        <div class="works">
-          {
-            featured.map((work) => (
-              <article class:list={["work-card", "featured", { "no-image": !work.image }]}>
-                {work.image && work.alt && work.width && work.height && (
-                  <img src={work.image} alt={work.alt} width={work.width} height={work.height} />
-                )}
-                <div class="copy">
-                  <h3>{work.name}</h3>
-                  {work.tool && <p class="tool">{work.tool}</p>}
-                  <p>{work.description}</p>
-                  {work.href && (
-                    <p>
-                      <a href={work.href} target="_blank" rel="noopener noreferrer">
-                        {text.visit}
-                      </a>
-                    </p>
-                  )}
-                </div>
-              </article>
-            ))
-          }
-          {
-            secondary.map((work) => (
-              <article class="work-card secondary">
-                {work.image && work.alt && work.width && work.height && (
-                  <img src={work.image} alt={work.alt} width={work.width} height={work.height} />
-                )}
-                <div class="copy">
-                  <h3>{work.name}</h3>
-                  {work.tool && <p class="tool">{work.tool}</p>}
-                  <p>{work.description}</p>
-                </div>
-                {work.href && (
-                  <a href={work.href} target="_blank" rel="noopener noreferrer">
-                    {text.visit}
-                  </a>
-                )}
-              </article>
-            ))
-          }
-        </div>
+  <div class="tools-rail">
+    <button class="mode" type="button" aria-pressed="true" aria-label={text.darkMode}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="3.5"></circle><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"></path></svg></button>
+    <ul class="rail">
+      <li><a href="#home" aria-label={text.nav.home} aria-current="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11 12 4l8 7"></path><path d="M6 10v9h12v-9"></path></svg><p class="tip">{text.nav.home}</p></a></li>
+      <li class="rail-line" aria-hidden="true"></li>
+      <li><a href="#about" aria-label={text.nav.tentang}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="10" r="2.2"></circle><path d="M8.2 16.2a4.2 4.2 0 0 1 7.6 0"></path></svg><p class="tip">{text.nav.tentang}</p></a></li>
+      <li><a href="#education" aria-label={text.nav.pendidikan}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9 12 4l9 5-9 5-9-5z"></path><path d="M7 11.5V16c0 1.4 2.2 2.8 5 2.8s5-1.4 5-2.8v-4.5"></path></svg><p class="tip">{text.nav.pendidikan}</p></a></li>
+      <li class="rail-line" aria-hidden="true"></li>
+      <li><a href="#contact" aria-label={text.nav.kontak}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 16-7-6 16-2.4-6.2L4 12z"></path></svg><p class="tip">{text.nav.kontak}</p></a></li>
+    </ul>
+    <button class="to-top" type="button" aria-label={text.backTop}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V6"></path><path d="m6 11 6-6 6 6"></path></svg></button>
+  </div>
+  <button class="gear" type="button" aria-label={text.colorSettings}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"></path></svg></button>
+
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label={text.openMenu}></button>
+  <nav class="menu" id="menu" hidden>
+    <a href="#home">{text.nav.home}</a>
+    <a href="#about">{text.nav.tentang}</a>
+    <a href="#education">{text.nav.pendidikan}</a>
+    <a href="#contact">{text.nav.kontak}</a>
+    <div class="langs">
+      {locale === "id" ? <span aria-current="true">Indonesia</span> : <a href="/" data-lang-switch>Indonesia</a>}
+      {locale === "en" ? <span aria-current="true">English</span> : <a href={otherHref} data-lang-switch>English</a>}
+    </div>
+  </nav>
+
+  <main class="stage">
+    <section class="block" id="home">
+      <div class="who">
+        <img src="/avatar-kartu.jpg" alt="" width="48" height="48" />
+        <p>{siteName}<br /><span class="role">{role}</span></p>
+      </div>
+      <h1>{text.hero}</h1>
+      <div class="stats">
+        <p class="stat"><strong data-count="8" data-suffix="+">0</strong><span>{text.yearsLabel}</span></p>
+        <p class="stat"><strong data-count="10" data-suffix="+">0</strong><span>{text.projectsLabel}</span></p>
       </div>
     </section>
 
-    <section class="section" id="layanan">
-      <div class="wrap">
-        <h2 class="section-heading">{text.servicesTitle}</h2>
-        <div class="services">
-          {
-            text.services.map((service) => (
-              <article class="service">
-                <h3>{service.title}</h3>
-                <p>{service.text}</p>
-              </article>
-            ))
-          }
-        </div>
+    <section class="block" id="about">
+      <p class="kicker"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="10" r="2.2"></circle><path d="M8.2 16.2a4.2 4.2 0 0 1 7.6 0"></path></svg>{text.aboutTitle}</p>
+      <h2>{text.aboutHeading}</h2>
+      <p class="lede">{text.about}</p>
+      <ul class="awards">
+        {text.services.map((service) => (
+          <li>
+            <div>
+              <h3 class="award-name">{service.title}</h3>
+              <p class="award-org">{service.text}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="block" id="education">
+      <p class="kicker"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9 12 4l9 5-9 5-9-5z"></path><path d="M7 11.5V16c0 1.4 2.2 2.8 5 2.8s5-1.4 5-2.8v-4.5"></path></svg>{text.educationTitle}</p>
+      <div class="timeline">
+        <div class="timeline-line" aria-hidden="true"><div class="prg-line"></div></div>
+        {education.map((item) => (
+          <article>
+            <p class="when">{item.when}</p>
+            <span class="mark-dot" aria-hidden="true"></span>
+            <div class="body">
+              <p class="role">{item.label}</p>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
 
-    <section class="section" id="tentang">
-      <div class="wrap">
-        <h2 class="section-heading">{text.aboutTitle}</h2>
-        <p>{text.about}</p>
+    <section class="block" id="work">
+      <div class="work">
+        {text.works.map((work) => (
+          <article>
+            {work.href ? (
+              <a class="work-image" href={work.href} target="_blank" rel="noopener noreferrer">
+                <img src={work.image} alt={work.alt} width={work.width} height={work.height} />
+              </a>
+            ) : (
+              <div class="work-image">
+                <img src={work.image} alt={work.alt} width={work.width} height={work.height} />
+              </div>
+            )}
+            <div class="work-static">
+              <h3>{work.href ? <a href={work.href} target="_blank" rel="noopener noreferrer">{work.name}</a> : work.name}</h3>
+              <p>{work.description}</p>
+            </div>
+            <div class="work-copy">
+              <h3>{work.href ? <a href={work.href} target="_blank" rel="noopener noreferrer">{work.name}</a> : work.name}</h3>
+              <p>{work.description}</p>
+              {work.href && <p class="more"><a href={work.href} target="_blank" rel="noopener noreferrer">{text.visit}</a></p>}
+            </div>
+          </article>
+        ))}
       </div>
     </section>
 
-    <section class="section" id="kontak">
-      <div class="wrap">
-        <h2 class="section-heading">{text.contactTitle}</h2>
-        <p class="contact-intro">{text.contactIntro}</p>
-        <ul class="contact-list">
-          {
-            contacts.map((contact) => (
-              <li>
-                <span>{contact.label}</span>
-                {contact.external ? (
-                  <a href={contact.href} target="_blank" rel="noopener noreferrer">
-                    {contact.text}
-                  </a>
-                ) : (
-                  <a href={contact.href}>{contact.text}</a>
-                )}
-              </li>
-            ))
-          }
+    <section class="block" id="contact">
+      <div class="contact-grid">
+        <h2>{text.contactIntro}</h2>
+        <ul class="channels">
+          {contacts.map((contact) => (
+            <li>
+              <span>{contact.label}</span>
+              {contact.external ? (
+                <a href={contact.href} target="_blank" rel="noopener noreferrer">{contact.text}</a>
+              ) : (
+                <a href={contact.href}>{contact.text}</a>
+              )}
+            </li>
+          ))}
         </ul>
       </div>
     </section>
+
+    <footer class="quote-block" id="footer">
+      <div class="br-line"></div>
+      <div class="foot-inner">
+        <svg class="word-brand" viewBox="0 0 760 160" role="img" aria-label="Al Basri">
+          <text x="0" y="132" font-family="Funnel Display, Georgia, serif" font-size="128" font-weight="500">AL BASRI</text>
+        </svg>
+        <a class="f-logo" href="#home" aria-label={siteName}>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><text x="16" y="21" text-anchor="middle" font-family="Funnel Display, Georgia, serif" font-size="12" fill="#fff">HB</text></svg>
+        </a>
+      </div>
+      <div class="foot-bottom">
+        <p class="legal">{text.footer}</p>
+        <svg class="word-dev" viewBox="0 0 280 160" role="img" aria-label="Dev">
+          <text x="0" y="132" font-family="Funnel Display, Georgia, serif" font-size="128" font-weight="500">DEV</text>
+        </svg>
+      </div>
+    </footer>
   </main>
+
+  <script is:inline define:vars={{ days, months, openMenu: text.openMenu, closeMenu: text.closeMenu }}>
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const today = document.querySelector("#today");
+    const clock = document.querySelector("#clock");
+
+    function renderClock() {
+      if (!today || !clock) return;
+      const now = new Date();
+      today.textContent = days[now.getDay()] + ", " + months[now.getMonth()] + " " + now.getDate();
+      clock.textContent = String(now.getHours()).padStart(2, "0") + ":" + String(now.getMinutes()).padStart(2, "0");
+    }
+
+    renderClock();
+    window.setInterval(renderClock, 10000);
+
+    function renderCount(node, value) {
+      const suffix = node.getAttribute("data-suffix") || "";
+      node.textContent = String(value) + suffix;
+    }
+
+    const counts = [...document.querySelectorAll("[data-count]")];
+    if (reduced) {
+      counts.forEach((node) => renderCount(node, Number(node.getAttribute("data-count"))));
+    } else if (counts.length) {
+      const seen = new WeakSet();
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting || seen.has(entry.target)) return;
+          seen.add(entry.target);
+          const target = Number(entry.target.getAttribute("data-count"));
+          const started = performance.now();
+          function frame(now) {
+            const progress = Math.min(1, (now - started) / 900);
+            renderCount(entry.target, Math.round(target * progress));
+            if (progress < 1) requestAnimationFrame(frame);
+          }
+          requestAnimationFrame(frame);
+          counterObserver.unobserve(entry.target);
+        });
+      }, { threshold: 0 });
+      counts.forEach((node) => counterObserver.observe(node));
+    }
+
+    const menuButton = document.querySelector(".menu-btn");
+    const menu = document.querySelector("#menu");
+
+    function setMenu(open) {
+      if (!menu || !menuButton) return;
+      menu.hidden = !open;
+      menuButton.setAttribute("aria-expanded", open ? "true" : "false");
+      menuButton.setAttribute("aria-label", open ? closeMenu : openMenu);
+      document.body.classList.toggle("lock", open);
+    }
+
+    if (menuButton && menu) {
+      menuButton.addEventListener("click", () => {
+        const open = menu.hidden;
+        setMenu(open);
+        if (open) {
+          const first = menu.querySelector("a");
+          if (first) first.focus();
+        }
+      });
+      menu.addEventListener("click", (event) => {
+        if (event.target instanceof HTMLAnchorElement) setMenu(false);
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !menu.hidden) {
+          setMenu(false);
+          menuButton.focus();
+        }
+      });
+    }
+
+    const railLinks = [...document.querySelectorAll(".rail a")];
+    const sections = railLinks.map((link) => document.querySelector(link.getAttribute("href"))).filter(Boolean);
+    if (sections.length) {
+      const railObserver = new IntersectionObserver((entries) => {
+        const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (!visible) return;
+        railLinks.forEach((link) => {
+          const current = link.getAttribute("href") === "#" + visible.target.id;
+          if (current) link.setAttribute("aria-current", "true");
+          else link.removeAttribute("aria-current");
+        });
+      }, { rootMargin: "-40% 0px -50% 0px", threshold: [0.1, 0.4] });
+      sections.forEach((section) => railObserver.observe(section));
+    }
+
+    const desktopQuery = window.matchMedia("(min-width: 992px)");
+    const profile = document.querySelector(".profile");
+    const photo = document.querySelector(".profile-photo");
+    const homePhoto = photo ? photo.getAttribute("src") : "";
+    const workArticles = [...document.querySelectorAll(".work article")];
+
+    function showWork(article) {
+      workArticles.forEach((item) => item.classList.toggle("is-active", item === article));
+      const active = Boolean(article) && desktopQuery.matches;
+      if (profile) profile.classList.toggle("is-work", active);
+      if (!photo) return;
+      const image = active ? article.querySelector("img") : null;
+      const nextPhoto = image ? image.getAttribute("src") : homePhoto;
+      if (nextPhoto && photo.getAttribute("src") !== nextPhoto) photo.setAttribute("src", nextPhoto);
+    }
+
+    if (workArticles.length && photo) {
+      const workRatios = new Map();
+      const workObserver = new IntersectionObserver((entries) => {
+        if (!desktopQuery.matches) {
+          showWork(null);
+          return;
+        }
+        entries.forEach((entry) => {
+          workRatios.set(entry.target, entry.isIntersecting ? entry.intersectionRatio : 0);
+        });
+        let best = null;
+        let bestRatio = 0;
+        workRatios.forEach((ratio, article) => {
+          if (ratio > bestRatio) {
+            bestRatio = ratio;
+            best = article;
+          }
+        });
+        showWork(bestRatio >= 0.35 ? best : null);
+      }, { rootMargin: "-30% 0px -40% 0px", threshold: [0.35, 0.6] });
+      workArticles.forEach((article) => workObserver.observe(article));
+      desktopQuery.addEventListener("change", () => { if (!desktopQuery.matches) showWork(null); });
+    }
+
+    const toTop = document.querySelector(".to-top");
+    if (toTop) {
+      toTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: reduced ? "auto" : "smooth" });
+      });
+    }
+
+    const timelineTrack = document.querySelector(".timeline-line");
+    const timelineFill = document.querySelector(".prg-line");
+    let timelineFrame = 0;
+
+    function paintTimeline() {
+      if (!timelineTrack || !timelineFill) return;
+      const rect = timelineTrack.getBoundingClientRect();
+      if (rect.height <= 0) {
+        timelineFill.style.height = "0%";
+        return;
+      }
+      const ratio = (window.innerHeight * 0.5 - rect.top) / rect.height;
+      if (!Number.isFinite(ratio)) return;
+      timelineFill.style.height = (Math.min(1, Math.max(0, ratio)) * 100) + "%";
+    }
+
+    function queueTimeline() {
+      if (timelineFrame) return;
+      timelineFrame = window.requestAnimationFrame(() => {
+        timelineFrame = 0;
+        paintTimeline();
+      });
+    }
+
+    paintTimeline();
+    window.addEventListener("scroll", queueTimeline, { passive: true });
+    window.addEventListener("resize", queueTimeline);
+  </script>
 </Base>

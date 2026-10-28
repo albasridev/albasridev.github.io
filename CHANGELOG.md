@@ -4,6 +4,14 @@ Entri terbaru di atas. Tiap entri memuat tanggal, apa yang berubah, dan kenapa.
 
 ## 2026-10-29
 
+Tampilan lokal yang sudah disetujui dipasang di halaman publik, supaya github.io memakai susunan yang sama dengan pratinjau, dalam bahasa Indonesia dan Inggris.
+
+- Kartu profil, rel ikon, pendidikan, empat karya, kontak, dan tulisan kaki Al Basri Dev menggantikan tata letak lama. Echlo Beauty tetap tanpa tautan. Sakelar mode tetap gelap. Tombol warna tidak membuka panel.
+- Huruf Funnel Display dan Geist, beserta ilustrasi kartu, disalin ke `public/` supaya ikut terunggah. Folder pratinjau tidak disalin dan tidak di-commit. Instrument Serif dan Outfit tidak lagi dipakai.
+- Sakelar ID/EN ada di kepala halaman dan di menu layar sempit, dan tetap menjaga jangkar.
+
+## 2026-10-29
+
 Pembuka, Tentang, dan dua jalur layanan memakai kalimat yang Hasan kunci, supaya teks pengunjung sama dengan keputusan terakhir.
 
 - Pembuka menjadi Membangun Sistem & Panel Kustom dari Nol dengan Pemeliharaan Jangka Panjang. "Berbasis di Bali" lepas dari pembuka. Deskripsi singkat tetap menyebut Bali.
