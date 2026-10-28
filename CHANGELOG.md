@@ -4,6 +4,14 @@ Entri terbaru di atas. Tiap entri memuat tanggal, apa yang berubah, dan kenapa.
 
 ## 2026-10-29
 
+Tur ukur menahan aksi halaman referensi sejak jari menyentuh, supaya ikon setting tidak membuka panel dan menggeser kotak yang dicatat.
+
+- `_isak_preview/ukur-titik.js` menahan aksi sejak jari menyentuh. Tautan, panel, dan formulir pada halaman referensi tidak ikut berjalan. Kotak yang dicatat tetap kotak yang pertama ditekan.
+- Empat langkah pada hasil ukur sebelumnya tidak dipakai: ikon kanan, baris jabatan, tombol menu pada jendela lebar, dan kutipan kaki. Keempatnya perlu diukur ulang pada jendela lebar dan layar sempit.
+- Halaman publik tidak diubah.
+
+## 2026-10-29
+
 Skrip tur kotak dalam ditambah, supaya jarak kartu, tombol, dan kutipan bisa dicatat tanpa mengubah situs publik.
 
 - `_isak_preview/ukur-titik.js` menandai satu contoh tiap kotak dengan pita dan cincin kuning. Klik tidak membuka tautan dan tidak mengirim formulir. Cookie dan newsletter tidak diukur.
